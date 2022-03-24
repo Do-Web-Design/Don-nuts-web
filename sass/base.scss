@@ -1,0 +1,122 @@
+//color variables
+$color-white: #fbfaf9;
+$color-text-dark: #111111;
+
+$color-pure-white: white;
+$color-shadow: rgb(107, 100, 100);
+
+$color-primary: #37110f;
+$color-secondary: #9e6d3f;
+$color-thirthary: #e0d7ce;
+
+$bp-1540: 96.25em;
+$bp-1290: 80.625em;
+$bp-1140: 71.25em;
+$bp-1020: 63.75em;
+$bp-870: 54.375em;
+$bp-740: 46.25em;
+$bp-680: 42.5em;
+$bp-560: 35em;
+$bp-420: 26.25em;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-1540) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-1290) {
+    font-size: 45%;
+  }
+  @media only screen and (max-width: $bp-680) {
+    font-size: 40%;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+  background-color: $color-white;
+  display: grid;
+  grid-template-columns:
+    minmax(6rem, 1fr)
+    minmax(min-content, 130rem)
+    minmax(6rem, 1fr);
+  grid-template-rows: repeat(3, max-content);
+  position: relative;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  @media only screen and (max-width: $bp-1140) {
+    grid-template-columns:
+      minmax(2rem, 1fr)
+      minmax(min-content, 120rem)
+      minmax(2rem, 1fr);
+  }
+  @media only screen and (max-width: $bp-1020) {
+    grid-template-columns:
+      minmax(2rem, 1fr)
+      minmax(min-content, 100rem)
+      minmax(2rem, 1fr);
+  }
+
+  @media only screen and (max-width: $bp-870) {
+    grid-template-columns:
+      minmax(1rem, 1fr)
+      minmax(min-content, 85rem)
+      minmax(1rem, 1fr);
+  }
+
+  @media only screen and (max-width: $bp-740) {
+    grid-template-columns:
+      minmax(1rem, 1fr)
+      minmax(min-content, 80rem)
+      minmax(1rem, 1fr);
+  }
+
+  @media only screen and (max-width: $bp-680) {
+    grid-template-columns:
+      minmax(1rem, 1fr)
+      minmax(min-content, 75rem)
+      minmax(1rem, 1fr);
+  }
+
+  @media only screen and (max-width: $bp-560) {
+    grid-template-columns:
+      minmax(1rem, 1fr)
+      minmax(min-content, 55rem)
+      minmax(1rem, 1fr);
+  }
+
+  @media only screen and (max-width: $bp-420) {
+    grid-template-columns:
+      minmax(1rem, 1fr)
+      minmax(min-content, 34rem)
+      minmax(1rem, 1fr);
+  }
+}
+
+.container {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  position: relative;
+}
+
+// .swiper {
+//   width: 600px;
+//   height: 300px;
+// }

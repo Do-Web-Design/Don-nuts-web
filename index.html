@@ -1,0 +1,4642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;700&family=Rubik:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="img/logo_Icon.png" />
+    <link rel="apple-touch-icon" href="img/logo_Icon-favicon-apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.7.1.min.js"
+    ></script>
+
+    <title>Don'donuts</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__left">
+        <img
+          src="img/logo2.png"
+          alt="Don'nuts logo"
+          class="nav__logo hidden logo-link"
+        />
+        <ion-icon class="nav__icon--menu" name="menu-outline"></ion-icon>
+        <a href="#" class="nav__link menu-link">menu</a>
+      </div>
+
+      <form action="#" class="search">
+        <input type="text" class="search__input" placeholder="Don'nuts" />
+        <button class="search__button">
+          <ion-icon class="search__icon" name="search-outline"></ion-icon>
+        </button>
+      </form>
+
+      <img
+        src="img/basket.png"
+        alt="basket"
+        class="nav__icon--basket icon__basket icon-basket"
+      />
+      <img src="img/location.png" alt="donut" class="nav__background" />
+    </nav>
+    <div id="menu-specials" class="container">
+      <main class="section main">
+        <header class="header">
+          <div class="headings">
+            <img
+              src="img/logo2.png"
+              alt="logo Don'nuts"
+              class="headings__logo"
+            />
+            <h2 class="heading__2">
+              Fresh and tasty donuts for you every single day!
+            </h2>
+          </div>
+
+          
+          <button
+            class="cards__arrow cards__arrow--left swiper-button-prev"></button>
+          <button
+            class="cards__arrow cards__arrow--right swiper-button-next"></button>
+          <div class="cards swiper">
+            <div class="swiper-wrapper">
+              <div class="card__content swiper-slide">
+                <div class="card">
+                  <img src="img/donut1.png" class="card__img" alt="" />
+                  <p class="text__title card__title">Blueberry Cake</p>
+                  <p class="text__medium">blueberry-vanilla combo!</p>
+                  <img
+                    src="img/basket.png"
+                    alt="icon shopping card"
+                    class="icon__basket card__basket"
+                  />
+                  <img
+                    src="img/basket--white.png"
+                    alt="icon shopping card"
+                    class="icon__basket card__basket--white hidden"
+                  />
+                </div>
+                <div class="card__hovered hidden">
+                  <img src="img/donut1.png" alt="" class="card__hovered--pic" />
+                  <p class="text__title">Blueberry Cake</p>
+                  <p class="text__small">Blueberry-vanilla colourful life!</p>
+                  <div class="card__input add__number">
+                    <ion-icon
+                      class="icon__add"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <input
+                      class="add__input card__input input-number1"
+                      type="text"
+                      min="1"
+                      max="100"
+                      placeholder="1"
+                      value="1"
+                    />
+                    <ion-icon class="icon__add" name="add-outline"></ion-icon>
+                    <p class="text__medium add__price">
+                      $<span class="input-price1 heading__2">4.25</span>
+                    </p>
+                  </div>
+                  <div class="add__result hidden">
+                    <p class="add__result--number heading__4 textRN1">3</p>
+                    <p class="heading__4">x</p>
+                    <p class="heading__4">
+                      $<span class="add__result--price textRP1">12.75</span>
+                    </p>
+                  </div>
+                  <button class="btn btn__add card__hovered--btn btn-card-add">Order now</button>
+                  <button class="btn btn__add icon-basket card__hovered--btn btn-card-pay hidden">
+                    Pay now
+                  </button>
+                </div>
+              </div>
+
+              <div class="card__content swiper-slide">
+                <div class="card">
+                  <img src="img/donut2.png" class="card__img" alt="" />
+                  <p class="card__title text__title">Crème Brûlée</p>
+                  <p class="text__medium">crisp, smoky candy shell</p>
+                  <img
+                    src="img/basket.png"
+                    alt=""
+                    class="icon__basket card__basket"
+                  />
+                </div>
+
+                <div class="card__hovered hidden">
+                  <img src="img/donut2.png" alt="" class="card__hovered--pic" />
+                  <p class="text__title">Crème Brûlée</p>
+                  <p class="text__small">Crème Brûlée au champagne!</p>
+                  <div class="card__input add__number">
+                    <ion-icon
+                      class="icon__add"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <input
+                      class="add__input card__input input-number2"
+                      type="text"
+                      min="1"
+                      max="100"
+                      placeholder="1"
+                      value="1"
+                    />
+                    <ion-icon class="icon__add" name="add-outline"></ion-icon>
+                    <p class="text__medium add__price">
+                      $<span class="input-price2 heading__2">4.10</span>
+                    </p>
+                  </div>
+                  <div class="add__result hidden">
+                    <p class="add__result--number heading__4 textRN2">3</p>
+                    <p class="heading__4">x</p>
+                    <p class="heading__4">
+                      $<span class="add__result--price textRP2">12.75</span>
+                    </p>
+                  </div>
+                  <button class="btn btn__add card__hovered--btn btn-card-add">Order now</button>
+                  <button class="btn btn__add card__hovered--btn icon-basket btn-card-pay hidden">
+                    Pay now
+                  </button>
+                </div>
+              </div>
+
+              <div class="card__content swiper-slide">
+                <div class="card">
+                  <img src="img/donut3.png" class="card__img" alt="" />
+                  <p class="card__title text__title">Apple Cider</p>
+                  <p class="text__medium">apples, cinnamon, and coriander</p>
+                  <img
+                    src="img/basket.png"
+                    alt=""
+                    class="icon__basket card__basket"
+                  />
+                </div>
+                <div class="card__hovered hidden">
+                  <img src="img/donut3.png" alt="" class="card__hovered--pic" />
+                  <p class="text__title">Apple Cider</p>
+                  <p class="text__small">Lorem ipsum dolor sit amet.</p>
+                  <div class="card__input add__number">
+                    <ion-icon
+                      class="icon__add"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <input
+                      class="add__input card__input input-number3"
+                      type="text"
+                      min="1"
+                      max="100"
+                      placeholder="1"
+                      value="1"
+                    />
+                    <ion-icon class="icon__add" name="add-outline"></ion-icon>
+                    <p class="text__medium add__price">
+                      $<span class="heading__2 input-price3">4.35</span>
+                    </p>
+                  </div>
+                  <div class="add__result hidden">
+                    <p class="add__result--number heading__4 textRN3">3</p>
+                    <p class="heading__4">x</p>
+                    <p class="heading__4">
+                      $<span class="add__result--price textRP3">12.75</span>
+                    </p>
+                  </div>
+                  <button class="btn btn__add card__hovered--btn btn-card-add">Order now</button>
+                  <button class="btn btn__add card__hovered--btn icon-basket btn-card-pay hidden">
+                    Pay now
+                  </button>
+                </div>
+              </div>
+
+              <div class="card__content swiper-slide">
+                <div class="card">
+                  <img src="img/donut4.png" class="card__img" alt="" />
+                  <p class="card__title text__title">Chocolate</p>
+                  <p class="text__medium">
+                    dark chocolate with 100% natural cocoa powder
+                  </p>
+                  <img
+                    src="img/basket.png"
+                    alt=""
+                    class="icon__basket card__basket"
+                  />
+                </div>
+                <div class="card__hovered hidden">
+                  <img src="img/donut4.png" alt="" class="card__hovered--pic" />
+                  <p class="text__title">Chocolate</p>
+                  <p class="text__small">Lorem ipsum dolor sit amet.</p>
+                  <div class="card__input add__number">
+                    <ion-icon
+                      class="icon__add"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <input
+                      class="add__input card__input input-number4"
+                      type="text"
+                      min="1"
+                      max="100"
+                      placeholder="1"
+                      value="1"
+                    />
+                    <ion-icon class="icon__add" name="add-outline"></ion-icon>
+                    <p class="text__medium add__price">
+                      $<span class="heading__2 input-price4">4.65</span>
+                    </p>
+                  </div>
+                  <div class="add__result hidden">
+                    <p class="add__result--number heading__4 textRN4">3</p>
+                    <p class="heading__4">x</p>
+                    <p class="heading__4">
+                      $<span class="add__result--price textRP4">12.75</span>
+                    </p>
+                  </div>
+                  <button class="btn btn__add card__hovered--btn btn-card-add">Order now</button>
+                  <button class="btn btn__add card__hovered--btn icon-basket btn-card-pay hidden">
+                    Pay now
+                  </button>
+                </div>
+              </div>
+
+              <div class="card__content swiper-slide">
+                <div class="card">
+                  <img src="img/donut5.png" class="card__img" alt="" />
+                  <p class="card__title text__title">White Oreo</p>
+                  <p class="text__medium">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <img
+                    src="img/basket.png"
+                    alt=""
+                    class="icon__basket card__basket"
+                  />
+                </div>
+                <div class="card__hovered hidden">
+                  <img src="img/donut5.png" alt="" class="card__hovered--pic" />
+                  <p class="text__title">White Oreo</p>
+                  <p class="text__small">Lorem ipsum dolor sit amet.</p>
+                  <div class="card__input add__number">
+                    <ion-icon
+                      class="icon__add"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <input
+                      class="add__input card__input input-number5"
+                      type="text"
+                      min="1"
+                      max="100"
+                      placeholder="1"
+                      value="1"
+                    />
+                    <ion-icon class="icon__add" name="add-outline"></ion-icon>
+                    <p class="text__medium add__price">
+                      $<span class="heading__2 input-price5">3.95</span>
+                    </p>
+                  </div>
+                  <div class="add__result hidden">
+                    <p class="add__result--number heading__4 textRN5">3</p>
+                    <p class="heading__4">x</p>
+                    <p class="heading__4">
+                      $<span class="add__result--price textRP5">12.75</span>
+                    </p>
+                  </div>
+                  <button class="btn btn__add card__hovered--btn btn-card-add">Order now</button>
+                  <button class="btn btn__add card__hovered--btn icon-basket btn-card-pay hidden">
+                    Pay now
+                  </button>
+                </div>
+              </div>
+  
+              <div class="card__content swiper-slide">
+                <div class="card">
+                  <img src="img/donut6.png" class="card__img" alt="" />
+                  <p class="card__title text__title">Boom Espresso</p>
+                  <p class="text__medium">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <img
+                    src="img/basket.png"
+                    alt=""
+                    class="icon__basket card__basket"
+                  />
+                </div>
+                <div class="card__hovered hidden">
+                  <img src="img/donut6.png" alt="" class="card__hovered--pic" />
+                  <p class="text__title">Boom Espresso</p>
+                  <p class="text__small">Lorem ipsum dolor sit amet.</p>
+                  <div class="card__input add__number">
+                    <ion-icon
+                      class="icon__add"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <input
+                      class="add__input card__input input-number6"
+                      type="text"
+                      min="1"
+                      max="100"
+                      placeholder="1"
+                      value="1"
+                    />
+                    <ion-icon class="icon__add" name="add-outline"></ion-icon>
+                    <p class="text__medium add__price">
+                      $<span class="heading__2 input-price6">4.25</span>
+                    </p>
+                  </div>
+                  <div class="add__result hidden">
+                    <p class="add__result--number heading__4 textRN6">3</p>
+                    <p class="heading__4">x</p>
+                    <p class="heading__4">
+                      $<span class="add__result--price textRP6">12.75</span>
+                    </p>
+                  </div>
+                  <button class="btn btn__add card__hovered--btn btn-card-add">Order now</button>
+                  <button class="btn btn__add card__hovered--btn icon-basket btn-card-pay hidden">
+                    Pay now
+                  </button>
+                </div>
+              </div>
+  
+              <div class="card__content swiper-slide">
+                <div class="card">
+                  <img src="img/donut7.png" class="card__img" alt="" />
+                  <p class="card__title text__title">Hot Latte</p>
+                  <p class="text__medium">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <img
+                    src="img/basket.png"
+                    alt=""
+                    class="icon__basket card__basket"
+                  />
+                </div>
+                <div class="card__hovered hidden">
+                  <img src="img/donut7.png" alt="" class="card__hovered--pic" />
+                  <p class="text__title">Hot Latte</p>
+                  <p class="text__small">Lorem ipsum dolor sit amet.</p>
+                  <div class="card__input add__number">
+                    <ion-icon
+                      class="icon__add"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <input
+                      class="add__input card__input input-number7"
+                      type="text"
+                      min="1"
+                      max="100"
+                      placeholder="1"
+                      value="1"
+                    />
+                    <ion-icon class="icon__add" name="add-outline"></ion-icon>
+                    <p class="text__medium add__price">
+                      $<span class="heading__2 input-price7">4.85</span>
+                    </p>
+                  </div>
+                  <div class="add__result hidden">
+                    <p class="add__result--number heading__4 textRN7">3</p>
+                    <p class="heading__4">x</p>
+                    <p class="heading__4">
+                      $<span class="add__result--price textRP7">12.75</span>
+                    </p>
+                  </div>
+                  <button class="btn btn__add card__hovered--btn btn-card-add">Order now</button>
+                  <button class="btn btn__add card__hovered--btn icon-basket btn-card-pay hidden">
+                    Pay now
+                  </button>
+                </div>
+              </div>
+  
+              <div class="card__content swiper-slide">
+                <div class="card">
+                  <img src="img/donut8.png" class="card__img" alt="" />
+                  <p class="card__title text__title">Grapefruit</p>
+                  <p class="text__medium">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <img
+                    src="img/basket.png"
+                    alt=""
+                    class="icon__basket card__basket"
+                  />
+                </div>
+                <div class="card__hovered hidden">
+                  <img src="img/donut8.png" alt="" class="card__hovered--pic" />
+                  <p class="text__title">Grapefruit</p>
+                  <p class="text__small">Lorem ipsum dolor sit amet.</p>
+                  <div class="card__input add__number">
+                    <ion-icon
+                      class="icon__add"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <input
+                      class="add__input card__input input-number8"
+                      type="text"
+                      min="1"
+                      max="100"
+                      placeholder="1"
+                      value="1"
+                    />
+                    <ion-icon class="icon__add" name="add-outline"></ion-icon>
+                    <p class="text__medium add__price">
+                      $<span class="heading__2 input-price8">4.10</span>
+                    </p>
+                  </div>
+                  <div class="add__result hidden">
+                    <p class="add__result--number heading__4 textRN8">3</p>
+                    <p class="heading__4">x</p>
+                    <p class="heading__4">
+                      $<span class="add__result--price textRP8">12.75</span>
+                    </p>
+                  </div>
+                  <button class="btn btn__add card__hovered--btn btn-card-add">Order now</button>
+                  <button class="btn btn__add card__hovered--btn icon-basket btn-card-pay hidden">
+                    Pay now
+                  </button>
+                </div>
+              </div>
+
+              <div class="card__content swiper-slide">
+                <div class="card">
+                  <img src="img/donut9.png" class="card__img" alt="" />
+                  <p class="card__title text__title">Citrus Cake</p>
+                  <p class="text__medium">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <img
+                    src="img/basket.png"
+                    alt=""
+                    class="icon__basket card__basket"
+                  />
+                </div>
+                <div class="card__hovered hidden">
+                  <img src="img/donut9.png" alt="" class="card__hovered--pic" />
+                  <p class="text__title">Citrus Cake</p>
+                  <p class="text__small">Lorem ipsum dolor sit amet.</p>
+                  <div class="card__input add__number">
+                    <ion-icon
+                      class="icon__add"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <input
+                      class="add__input card__input input-number9"
+                      type="text"
+                      min="1"
+                      max="100"
+                      placeholder="1"
+                      value="1"
+                    />
+                    <ion-icon class="icon__add" name="add-outline"></ion-icon>
+                    <p class="text__medium add__price">
+                      $<span class="heading__2 input-price9">4.15</span>
+                    </p>
+                  </div>
+                  <div class="add__result hidden">
+                    <p class="add__result--number heading__4 textRN9">3</p>
+                    <p class="heading__4">x</p>
+                    <p class="heading__4">
+                      $<span class="add__result--price textRP9">12.75</span>
+                    </p>
+                  </div>
+                  <button class="btn btn__add card__hovered--btn btn-card-add">Order now</button>
+                  <button class="btn btn__add card__hovered--btn icon-basket btn-card-pay hidden">
+                    Pay now
+                  </button>
+                </div>
+              </div>
+  
+              <div class="card__content swiper-slide">
+                <div class="card">
+                  <img src="img/donut10.png" class="card__img" alt="" />
+                  <p class="card__title text__title">Mango Cake</p>
+                  <p class="text__medium">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <img
+                    src="img/basket.png"
+                    alt=""
+                    class="icon__basket card__basket"
+                  />
+                </div>
+                <div class="card__hovered hidden">
+                  <img
+                    src="img/donut10.png"
+                    alt=""
+                    class="card__hovered--pic"
+                  />
+                  <p class="text__title">Mango Cake</p>
+                  <p class="text__small">Lorem ipsum dolor sit amet.</p>
+                  <div class="card__input add__number">
+                    <ion-icon
+                      class="icon__add"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <input
+                      class="add__input card__input input-number10"
+                      type="text"
+                      min="1"
+                      max="100"
+                      placeholder="1"
+                      value="1"
+                    />
+                    <ion-icon class="icon__add" name="add-outline"></ion-icon>
+                    <p class="text__medium add__price">
+                      $<span class="heading__2 input-price10">3.85</span>
+                    </p>
+                  </div>
+                  <div class="add__result hidden">
+                    <p class="add__result--number heading__4 textRN10">3</p>
+                    <p class="heading__4">x</p>
+                    <p class="heading__4">
+                      $<span class="add__result--price textRP10">12.75</span>
+                    </p>
+                  </div>
+                  <button class="btn btn__add card__hovered--btn btn-card-add">Order now</button>
+                  <button class="btn btn__add card__hovered--btn icon-basket btn-card-pay hidden">
+                    Pay now
+                  </button>
+                </div>
+              </div>
+  
+              <div class="card__content swiper-slide">
+                <div class="card">
+                  <img src="img/donut11.png" class="card__img" alt="" />
+                  <p class="card__title text__title">Deep Tropical</p>
+                  <p class="text__medium">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <img
+                    src="img/basket.png"
+                    alt=""
+                    class="icon__basket card__basket"
+                  />
+                </div>
+                <div class="card__hovered hidden">
+                  <img
+                    src="img/donut11.png"
+                    alt=""
+                    class="card__hovered--pic"
+                  />
+                  <p class="text__title">Deep Tropical</p>
+                  <p class="text__small">Lorem ipsum dolor sit amet.</p>
+                  <div class="card__input add__number">
+                    <ion-icon
+                      class="icon__add"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <input
+                      class="add__input card__input input-number11"
+                      type="text"
+                      min="1"
+                      max="100"
+                      placeholder="1"
+                      value="1"
+                    />
+                    <ion-icon class="icon__add" name="add-outline"></ion-icon>
+                    <p class="text__medium add__price">
+                      $<span class="heading__2 input-price11">4.55</span>
+                    </p>
+                  </div>
+                  <div class="add__result hidden">
+                    <p class="add__result--number heading__4 textRN11">3</p>
+                    <p class="heading__4">x</p>
+                    <p class="heading__4">
+                      $<span class="add__result--price textRP11">12.75</span>
+                    </p>
+                  </div>
+                  <button class="btn btn__add card__hovered--btn btn-card-add">Order now</button>
+                  <button class="btn btn__add card__hovered--btn icon-basket btn-card-pay hidden">
+                    Pay now
+                  </button>
+                </div>
+              </div>
+  
+              <div class="card__content swiper-slide">
+                <div class="card">
+                  <img src="img/donut12.png" class="card__img" alt="" />
+                  <p class="card__title text__title">Salty Caramel</p>
+                  <p class="text__medium">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <img
+                    src="img/basket.png"
+                    alt=""
+                    class="icon__basket card__basket"
+                  />
+                </div>
+                <div class="card__hovered hidden">
+                  <img
+                    src="img/donut12.png"
+                    alt=""
+                    class="card__hovered--pic"
+                  />
+                  <p class="text__title">Salty Caramel</p>
+                  <p class="text__small">Lorem ipsum dolor sit amet.</p>
+                  <div class="card__input add__number">
+                    <ion-icon
+                      class="icon__add"
+                      name="remove-outline"
+                    ></ion-icon>
+                    <input
+                      class="add__input card__input input-number12"
+                      type="text"
+                      min="1"
+                      max="100"
+                      placeholder="1"
+                      value="1"
+                    />
+                    <ion-icon class="icon__add" name="add-outline"></ion-icon>
+                    <p class="text__medium add__price">
+                      $<span class="heading__2 input-price12">4.55</span>
+                    </p>
+                  </div>
+                  <div class="add__result hidden">
+                    <p class="add__result--number heading__4 textRN12">3</p>
+                    <p class="heading__4">x</p>
+                    <p class="heading__4">
+                      $<span class="add__result--price textRP12">12.75</span>
+                    </p>
+                  </div>
+                  <button class="btn btn__add card__hovered--btn btn-card-add">Order now</button>
+                  <button class="btn btn__add card__hovered--btn icon-basket btn-card-pay hidden">
+                    Pay now
+                  </button>
+                </div>
+              </div>
+            </div>           
+          </div>
+        </header>
+
+        <section class="location">
+          <h1 class="heading__1">Where to find us</h1>
+
+          <button class="btn btn__main location__btn view-location">
+            View our locations <span class="btn__main--arrow">&rarr;</span>
+          </button>
+
+          <img src="img/location.png" alt="" class="location__img" />
+        </section>
+      </main>
+
+      <section class="section menu hidden">
+        <div class="menu__container">
+          <div class="menu__content">
+            <div class="menu__links">
+              <a
+                href="#menu-specials"
+                class="link__main link__main--white menu__links--1"
+                >Specials of Don'nuts</a
+              >
+              <a
+                href="#menu-donuts"
+                class="link__main link__main--dark menu__links--2"
+                >donuts</a
+              >
+              <a
+                href="#menu-milkshakes"
+                class="link__main link__main--dark menu__links--3"
+                >milkshakes</a
+              >
+              <a
+                href="#menu-coffee"
+                class="link__main link__main--dark menu__links--4"
+                >coffee</a
+              >
+            </div>
+            <div class="menu__offers">
+              <div class="menu__offer">
+                <img src="img/donut1.png" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Blueberry Cake</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$4.25</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/donut2.png" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Crème Brûlée</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$4.10</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/donut3.png" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Apple Cider</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$4.35</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/donut4.png" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Chocolate</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$4.65</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/donut5.png" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">White Oreo</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$3.95</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/donut6.png" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Boom Espresso</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$4.25</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="menu-donuts" class="menu__nav menu__links">
+              <a
+                href="#menu-specials"
+                class="link__main link__main--dark menu__links--1"
+                >Specials of Don'nuts</a
+              >
+              <a
+                href="#menu-donuts"
+                class="link__main link__main--white menu__links--2"
+                >donuts</a
+              >
+              <a
+                href="#menu-milkshakes"
+                class="link__main link__main--dark menu__links--3"
+                >milkshakes</a
+              >
+              <a
+                href="#menu-coffee"
+                class="link__main link__main--dark menu__links--4"
+                >coffee</a
+              >
+            </div>
+
+            <div class="menu__offers">
+              <div class="menu__offer">
+                <img src="img/donut7.png" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Hot Latte</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$4.85</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/donut8.png" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Grapefruit</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$4.10</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/donut9.png" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Citrus Cake</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$4.15</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/donut10.png" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Mango Cake</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$3.85</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/donut11.png" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Deep Tropical</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$4.55</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/donut12.png" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Salty Caramel</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$4.45</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="menu-milkshakes" class="menu__nav menu__links">
+              <a
+                href="#menu-specials"
+                class="link__main link__main--dark menu__links--1"
+                >Specials of Don'nuts</a
+              >
+              <a
+                href="#menu-donuts"
+                class="link__main link__main--dark menu__links--2"
+                >donuts</a
+              >
+              <a
+                href="#menu-milkshakes"
+                class="link__main link__main--white menu__links--3"
+                >milkshakes</a
+              >
+              <a
+                href="#menu-coffee"
+                class="link__main link__main--dark menu__links--4"
+                >coffee</a
+              >
+            </div>
+
+            <div class="menu__offers">
+              <div class="menu__offer">
+                <img src="img/milkshake1.jpg" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Raspberry shake</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$4.55</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/milkshake2.jpg" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Strawberry shake</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$4.95</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/milkshake3.jpg" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Chocolate shake</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$5.25</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/milkshake4.jpg" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Blueberry shake</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$5.10</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/milkshake5.jpg" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Tropical Fig shake</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$5.55</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/milkshake6.jpg" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Special Donut shake</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$6.95</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="menu-coffee" class="menu__nav menu__links">
+              <a
+                href="#menu-specials"
+                class="link__main link__main--dark menu__links--1"
+                >Specials of Don'nuts</a
+              >
+              <a
+                href="#menu-donuts"
+                class="link__main link__main--dark menu__links--2"
+                >donuts</a
+              >
+              <a
+                href="#menu-milkshakes"
+                class="link__main link__main--dark menu__links--3"
+                >milkshakes</a
+              >
+              <a
+                href="#menu-coffee"
+                class="link__main link__main--white menu__links--4"
+                >coffee</a
+              >
+            </div>
+
+            <div class="menu__offers">
+              <div class="menu__offer">
+                <img src="img/coffee1.jpg" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Latte Salty Caramel</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$4.95</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/coffee2.jpg" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Cappucino Checolate</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$4.45</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/coffee3.jpg" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Frappucino Ice</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$4.25</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/coffee4.jpg" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Coffee + donut</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$6.15</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/coffee5.jpg" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Coffee + cake of a day</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi, odio
+                    dolorum.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$5.95</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="menu__offer">
+                <img src="img/coffee6.jpg" alt="Donut" class="menu__pic" />
+                <div class="menu__description">
+                  <p class="heading__2">Duo + donut</p>
+                  <p class="text__small">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptates repudiandae voluptatibus sint sequi.
+                  </p>
+                  <div class="menu__price">
+                    <p class="text__medium">$6.50</p>
+                    <button class="btn btn__order text__small btn-add">
+                      Add to order
+                      <img
+                        src="img/basket-black.png"
+                        alt="icon basket"
+                        class="btn__order--basket"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section payment hidden">
+        <div class="payment__container">
+          <div class="payment__nav--content">
+            <div class="payment__nav payment__nav--inactive payment-number1">
+              <p class="payment__nav--number">1</p>
+              <ion-icon
+                class="icon__checkmark payment__nav--icon hidden"
+                name="checkmark-outline"
+              ></ion-icon>
+            </div>
+            <div class="payment__nav payment__nav--inactive payment-number2">
+              <p class="payment__nav--number">2</p>
+              <ion-icon
+                class="icon__checkmark payment__nav--icon hidden"
+                name="checkmark-outline"
+              ></ion-icon>
+            </div>
+            <div class="payment__nav payment__nav--inactive payment-number3">
+              <p class="payment__nav--number">3</p>
+              <ion-icon
+                class="icon__checkmark payment__nav--icon hidden"
+                name="checkmark-outline"
+              ></ion-icon>
+            </div>
+            <div class="payment__nav payment__nav--inactive payment-number4">
+              <p class="payment__nav--number">4</p>
+              <ion-icon
+                class="icon__checkmark payment__nav--icon hidden"
+                name="checkmark-outline"
+              ></ion-icon>
+            </div>
+          </div>
+          <div class="payment__main">
+            <div class="payment__main--content">
+              <div class="step step-1 payment__shoppingCard">
+                <p class="heading__2">Shopping Card</p>
+
+                <div class="payment__emptyCard">
+                  <p class="text__small">Your shopping card is empty</p>
+                  <button class="btn btn__main menu-link">View menu</button>
+                </div>
+
+                <div class="payment__shoppingCard--content hidden">
+                  <div class="payment__card--all">
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/donut1.png"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2 order-name">Blueberry</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2 order-price"
+                            >4.25</span
+                          >
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number1 order-number"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP1 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/donut2.png"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2 order-name">Crème Brûlée</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2 order-price"
+                            >4.10</span
+                          >
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number2 order-value"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP2 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/donut3.png"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2 order-name">Apple Cider</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2 order-price"
+                            >4.35</span
+                          >
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number3 order-value"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP3 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/donut4.png"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Chocolate</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">4.65</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number4"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP4 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/donut5.png"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">White Oreo</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">3.95</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number5"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP5 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/donut6.png"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Boom Espresso</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">4.25</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number6"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP6 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/donut7.png"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Hot Latte</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">4.85</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number7"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP7 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/donut8.png"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Grapefruit</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">4.10</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number8"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP8 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/donut9.png"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Citrus Cake</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">4.15</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number9"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP9 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/donut10.png"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Mango Cake</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">3.85</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number10"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP10 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/donut11.png"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Deep Tropical</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">4.55</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number11"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP11 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/donut12.png"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Salty Caramel</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">4.45</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number12"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP12 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/milkshake1.jpg"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Raspberry shake</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">4.55</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number13"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP13 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/milkshake2.jpg"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Strawberry shake</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">4.95</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number14"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP14 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/milkshake3.jpg"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Chocolate shake</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">5.25</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number15"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP15 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/milkshake4.jpg"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Blueberry shake</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">5.10</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number16"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP16 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/milkshake5.jpg"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Tropical Fig shake</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">5.55</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number17"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP17 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/milkshake6.jpg"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Special Donut shake</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">6.95</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number18"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP18 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/coffee1.jpg"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Latte Salty Caramel</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">4.95</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number19"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP19 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/coffee2.jpg"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Cappucino Checolate</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">4.45</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number20"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP20 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/coffee3.jpg"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Frappucino Ice</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">4.25</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number21"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP21 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/coffee4.jpg"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Coffee + donut</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">6.15</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number22"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP22 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/coffee5.jpg"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Coffee + cake</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">5.95</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number23"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP23 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="payment__card hidden">
+                      <div class="payment__card--left">
+                        <ion-icon
+                          class="icon__bin"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                        <img
+                          src="img/coffee6.jpg"
+                          class="payment__card--img"
+                          alt="donut"
+                        />
+                        <p class="heading__2">Duo + donuty</p>
+                      </div>
+                      <div class="payment__card--right">
+                        <p class="text__medium">
+                          $<span class="input-price heading__2">6.50</span>
+                        </p>
+                        <div class="payment__number">
+                          <ion-icon
+                            class="icon__add"
+                            name="remove-outline"
+                          ></ion-icon>
+                          <input
+                            class="add__input card__input input-number24"
+                            type="text"
+                            min="1"
+                            max="100"
+                            placeholder="1"
+                            value="1"
+                          />
+                          <ion-icon
+                            class="icon__add"
+                            name="add-outline"
+                          ></ion-icon>
+                        </div>
+
+                        <div class="add__result">
+                          <p class="heading__2">
+                            $<span
+                              class="add__result--price payment__card--price textRP24 totals-shop-card"
+                              >12.75</span
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="btn btn__main payment__card--btn btn-continue-step1"
+                  >
+                    continue
+                  </button>
+                </div>
+              </div>
+
+              <div class="step step-2 payment__location hidden">
+                <div class="payment__btns">
+                  <button
+                    type="button"
+                    class="heading__2 payment__btn payment__btn--inactive btn-pick"
+                  >
+                    picked up
+                  </button>
+                  <button
+                    type="button"
+                    class="heading__2 payment__btn payment__btn--active btn-delivery"
+                  >
+                    delivery
+                  </button>
+                </div>
+                <div class="pickedUp hidden">
+                  <button
+                    class="btn btn__order heading__2 view-location pickedUp__btn"
+                  >
+                    View locations
+                  </button>
+                  <div class="pickedUp__address">
+                    <ion-icon
+                      class="icon__location"
+                      name="location-outline"
+                    ></ion-icon>
+                    <p class="text__small selected-location">
+                      623 Amaizing St., 2nd Floor, San Francisco, CA 94105
+                    </p>
+                  </div>
+                </div>
+
+                <div class="delivery">
+                  <form action="javascript:submitForm();" class="delivery__form">
+                    <p class="heading__2">Delivery</p>
+                    <div class="delivery__form--inLine">
+                      <input
+                        type="street"
+                        class="payment-form"
+                        id="delivery-street"
+                        placeholder="Street"
+                      />
+
+                      <input
+                        type="text"
+                        id="delivery-street-num"
+                        class="payment-form"
+                        placeholder="Number"
+                      />
+                    </div>
+                    <input
+                      type="city"
+                      id="delivery-city"
+                      class="payment-form"
+                      placeholder="City"
+                    />
+                    <div class="delivery__form--inLine">
+                      <input
+                        type="state"
+                        id="delivery-state"
+                        class="payment-form"
+                        placeholder="State"
+                      />
+                      <input
+                        type="zip"
+                        id="delivery-zip"
+                        class="payment-form"
+                        placeholder="Zip"
+                      />
+                    </div>
+                  <!-- </form> -->
+                </div>
+
+                <div action="" class="delivery__contact">
+                  <p class="heading__2">Contact</p>
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="payment-form"
+                    placeholder="+00 000 000 000"
+                    minlength="9"
+                    autocomplete="tel"
+                    name="phone"
+                    required
+                  />
+                  <input
+                    type="email"
+                    id="email"
+                    class="payment-form"
+                    placeholder="name@example.gmail*"
+                    name="email"
+                    accesskey="e"
+                    autocomplete="email"
+                    required
+                  />
+                  <div class="delivery__contact--inLine">
+                    <input
+                      id="name"
+                      type="text"
+                      class="payment-form"
+                      placeholder="Your Name*"
+                      name="name"
+                      required
+                    />
+                    <input
+                      id="lastName"
+                      type="text"
+                      placeholder="Last Name*"
+                      class="payment-form"
+                      name="lastName"
+                      required
+                    />
+                  </div>
+                  <button type="submit"
+                    class="delivery__form--btn btn btn__main btn-continue-step2"
+                  >
+                    continue
+                  </button>
+                </div>
+              </form>
+
+              </div>
+
+              <div class="step step-3 payment__summary hidden">
+                <p class="heading__2">SUMMARY</p>
+                <div class="payment__summary--contact">
+                  <p class="text__small payment__summary--title">Contact</p>
+                  <p class="text__small name-selected">
+                    <span class="lastName-selected"></span>
+                  </p>
+                  <p class="text__small email-selected"></p>
+                  <p class="text__small phone-selected"></p>
+                </div>
+
+                <div class="payment__summary--delivery">
+                  <p class="text__small payment__summary--title">Delivery</p>
+                  <p class="text__small street-selected"></p>
+                  <p class="text__small city-selected"></p>
+                </div>
+                <div class="payment__summary--pickup hidden">
+                  <div class="pickedUp__address">
+                    <ion-icon
+                      class="icon__location"
+                      name="location-outline"
+                    ></ion-icon>
+                    <p class="text__small selected-location"></p>
+                  </div>
+                </div>
+                <button class="btn btn__order heading__2 btn-back-step3">
+                  Back
+                </button>
+              </div>
+            </div>
+            <div class="payment__totals">
+              <p class="heading__2">ORDER SUMMARY</p>
+              <div class="payment__payCard">
+                <div class="payment__payCard--list">
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Blueberry</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number1 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$4.25</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Crème Brûlée</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number2 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$4.10</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Apple Cider</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number3 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$4.35</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Chocolate</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number4 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$4.65</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">White Oreo</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number5 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$3.95</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Boom Espresso</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number6 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$4.25</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Hot Latte</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number7 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$4.85</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Grapefruit</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number8 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$4.10</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Citrus Cake</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number9 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$4.15</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Mango Cake</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number10 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$3.85</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Deep Tropical</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number11 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$4.55</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Salty Caramel</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number12 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$4.45</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Raspberry shake</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number13 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$4.55</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Strawberry shake</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number14 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$4.95</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Chocolate shake</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number15 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$5.25</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Blueberry shake</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number16 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$5.10</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Tropical Fig shake</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number17 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$5.55</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Special Donut shake</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number18 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$6.95</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Latte Salty Caramel</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number19 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$4.95</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Cappucino Checolate</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number20 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$4.45</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Frappucino Ice</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number21 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$4.25</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Coffee + donut</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number22 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$6.15</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Coffee + cake</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number23 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$5.95</span>
+                    </p>
+                  </div>
+
+                  <div class="payment__payCard--text list-card hidden">
+                    <p class="heading__2">Duo + donut</p>
+                    <p class="payment__payCard--numbers text__small">
+                      <input
+                        class="payment__input input-number24 order-number"
+                        type="text"
+                        min="1"
+                        max="100"
+                        placeholder="1"
+                        value="1"
+                      />
+                      <span class="">x</span>
+                      <span class="">$6.50</span>
+                    </p>
+                  </div>
+                </div>
+                <!-- ///////////////////////////////// -->
+                <div class="payment__payCard--text">
+                  <p class="text__small">Subtotal</p>
+                  <p class="text__small">
+                    $<span class="list-subtotal">0.00</span>
+                  </p>
+                </div>
+
+                <div class="payment__payCard--text">
+                  <p class="text__small">
+                    Tip (15%)
+                    <!-- <a href="" class="text__small">Change tip</a> -->
+                  </p>
+                  <p class="text__small">$<span class="list-tip">0.00</span></p>
+                </div>
+
+                <div class="payment__payCard--text">
+                  <p class="text__small">Taxes</p>
+                  <p class="text__small">$<span class="list-tax">0.00</span></p>
+                </div>
+
+                <div class="payment__payCard--text">
+                  <p class="heading__2">Order total</p>
+                  <p class="text__medium">
+                    $<span class="list-totals">0.00</span>
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn__main btn__main--white btn-continue-step3 pay-now"
+                >
+                  Pay now
+                </button>
+              </div>
+            </div>
+            <div class="step step-4 payment__pay hidden">
+              <p class="heading__2">Thank You</p>
+              <button class="btn btn__main menu-link">View menu</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__content">
+          <div class="footer__media">
+            <a href="#">
+              <img
+                class="footer__media--logo logo-link"
+                alt="Surfo"
+                src="img/logo.png"
+              />
+            </a>
+            <ul class="footer__media--links">
+              <li>
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><ion-icon
+                    class="footer__icon"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/" target="_blank"
+                  ><ion-icon
+                    class="footer__icon"
+                    name="logo-facebook"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/" target="_blank"
+                  ><ion-icon class="footer__icon" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+            </ul>
+            <p class="footer__description">
+              Copyright &copy; <span class="year">2022</span> by Don'nuts,
+              <br />
+              Aleksandra Depta <br />
+              Inc. All rights reserved.
+            </p>
+          </div>
+
+          <div class="footer__contact">
+            <a href="#t" class="heading__4">Contact us</a>
+            <p class="footer__description">
+              623 Amaizing St., 2nd Floor,<br />
+              San Francisco, CA 94105
+            </p>
+            <p>
+              <a class="footer__description" href="tel:215-23331-6120"
+                >215-23331-6120</a
+              ><br />
+              <a class="footer__description" href="mailto:hello@donnuts.com"
+                >hello@donnuts.com</a
+              >
+            </p>
+          </div>
+
+          <div class="footer__account footer__flex">
+            <p class="heading__4">Account</p>
+            <ul class="footer__nav">
+              <li>
+                <a class="footer__description" href="#">Log in</a>
+              </li>
+              <li>
+                <a class="footer__description" href="#">Sign up</a>
+              </li>
+              <li>
+                <a class="footer__description" href="">iOS app</a>
+              </li>
+              <li>
+                <a class="footer__description" href="">Android app</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__company footer__flex">
+            <p class="heading__4">Company</p>
+            <ul class="footer__nav">
+              <li>
+                <a class="footer__description" href="">About Don'nuts</a>
+              </li>
+              <li>
+                <a class="footer__description" href="">How we work</a>
+              </li>
+              <li>
+                <a class="footer__description" href="">Our team</a>
+              </li>
+              <li>
+                <a class="footer__description" href="">Careers</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer__resources footer__flex">
+            <p class="heading__4">More</p>
+            <ul class="footer__nav">
+              <li>
+                <a class="footer__description" href="">For Business</a>
+              </li>
+              <li>
+                <a class="footer__description" href="">Partners</a>
+              </li>
+              <li>
+                <a class="footer__description" href="">Press</a>
+              </li>
+              <li>
+                <a class="footer__description" href="">Certificates</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="section map hidden">
+      <div class="map__container">
+        <div class="locations">
+          <div class="locations__list">
+            <div class="locations__btns">
+              <button class="locations__btn locations__btn--dark btn-map-pick">
+                Picked Up
+              </button>
+
+              <button
+                class="locations__btn locations__btn--white btn-map-delivery"
+              >
+                Delivery
+              </button>
+            </div>
+
+            <div class="locations__box">
+              <ion-icon
+                class="icon__location--filled locations__icon"
+                name="location"
+              ></ion-icon>
+              <p class="text__small text-select">
+                3595 California St,<br />
+                San Francisco, CA 94118
+              </p>
+
+              <button class="btn btn__main btn__main--small btn-select">
+                Select
+              </button>
+            </div>
+
+            <div class="locations__box">
+              <ion-icon
+                class="icon__location--filled locations__icon"
+                name="location"
+              ></ion-icon>
+              <p class="text__small text-select">
+                264 Kearny St,<br />
+                San Francisco, CA 94108
+              </p>
+
+              <button class="btn btn__main btn__main--small btn-select">
+                Select
+              </button>
+            </div>
+
+            <div class="locations__box">
+              <ion-icon
+                class="icon__location--filled locations__icon"
+                name="location"
+              ></ion-icon>
+              <p class="text__small text-select">
+                462 Powell St,<br />
+                San Francisco, CA 94102
+              </p>
+
+              <button class="btn btn__main btn__main--small btn-select">
+                Select
+              </button>
+            </div>
+
+            <div class="locations__box">
+              <ion-icon
+                class="icon__location--filled locations__icon"
+                name="location"
+              ></ion-icon>
+              <p class="text__small text-select">
+                780 Market St,<br />
+                San Francisco, CA 94102
+              </p>
+
+              <button class="btn btn__main btn__main--small btn-select">
+                Select
+              </button>
+            </div>
+
+            <div class="locations__box">
+              <ion-icon
+                class="icon__location--filled locations__icon"
+                name="location"
+              ></ion-icon>
+              <p class="text__small text-select">
+                1255 Battery St,<br />
+                San Francisco, CA 94111
+              </p>
+
+              <button class="btn btn__main btn__main--small btn-select">
+                Select
+              </button>
+            </div>
+
+            <div class="locations__box">
+              <ion-icon
+                class="icon__location--filled locations__icon"
+                name="location"
+              ></ion-icon>
+              <p class="text__small text-select">
+                2165 Polk St,<br />
+                San Francisco, CA 94109
+              </p>
+
+              <button class="btn btn__main btn__main--small btn-select">
+                Select
+              </button>
+            </div>
+
+            <div class="locations__box">
+              <ion-icon
+                class="icon__location--filled locations__icon"
+                name="location"
+              ></ion-icon>
+              <p class="text__small text-select">
+                1750 Divisadero St,<br />
+                San Francisco, CA 94115
+              </p>
+
+              <button class="btn btn__main btn__main--small btn-select">
+                Select
+              </button>
+            </div>
+
+            <div class="locations__box">
+              <ion-icon
+                class="icon__location--filled locations__icon"
+                name="location"
+              ></ion-icon>
+              <p class="text__small text-select">
+                1375 3rd St,<br />
+                San Francisco, CA 94158
+              </p>
+
+              <button class="btn btn__main btn__main--small btn-select">
+                Select
+              </button>
+            </div>
+
+            <div class="locations__box">
+              <ion-icon
+                class="icon__location--filled locations__icon"
+                name="location"
+              ></ion-icon>
+              <p class="text__small text-select">
+                3995 24th St,<br />
+                San Francisco, CA 94114
+              </p>
+
+              <button class="btn btn__main btn__main--small btn-select">
+                Select
+              </button>
+            </div>
+
+            <div class="locations__box">
+              <ion-icon
+                class="icon__location--filled locations__icon"
+                name="location"
+              ></ion-icon>
+              <p class="text__small text-select">
+                44 Montgomery St,<br />
+                San Francisco, CA 94104
+              </p>
+
+              <button class="btn btn__main btn__main--small btn-select">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="map" class="map__box"></div>
+      </div>
+    </section>
+
+    <!-- popups -->
+    <section class="popups__add">
+      <!-- donuts special -->
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/donut1.png" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Blueberry Cake</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore ut illo.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number1 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price1">4.25</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN1">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP1">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/donut2.png" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Crème Brûlée</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore ut illo.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number2 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price2">4.10</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN2">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP2">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/donut3.png" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Apple Cider</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore ut illo.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number3 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price3">4.35</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN3">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP3">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/donut4.png" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Chocolate</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore ut illo.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number4 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price4">4.65</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN4">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP4">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/donut5.png" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">White Oreo</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore ut illo.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number5 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price5">3.95</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN5">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP5">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/donut6.png" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Boom Espresso</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore ut illo.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number6 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price6">4.25</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN6">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP6">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- donuts  -->
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/donut7.png" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Hot Dark Chocolate</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore ut illo.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number7 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price7">4.85</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN7">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP7">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/donut8.png" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Grapefruit</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore ut illo.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number8 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price8">4.10</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN8">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP8">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/donut9.png" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Citrus Cake</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore ut illo.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number9 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price9">4.15</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN9">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP9">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/donut10.png" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Mango Cake</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore ut illo.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number10 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price10">3.85</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN10">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP10">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/donut11.png" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Deep Tropical</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number11 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price11">4.55</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN11">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP11">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/donut12.png" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Salty Caramel</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore ut illo.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number12 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price12">4.45</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN12">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP12">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- milkshakes -->
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/milkshake1.jpg" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Raspberry shake</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number13 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price13">4.55</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN13">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP13">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/milkshake2.jpg" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Strawberry shake</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number14 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price14">4.95</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN14">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP14">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/milkshake3.jpg" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Chocolate shake</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number15 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price15">5.25</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN15">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP15">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/milkshake4.jpg" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Blueberry shake</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number16 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price16">5.10</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN16">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP16">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/milkshake5.jpg" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Tropical Fig shake</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number10 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price17">5.55</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN17">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP17">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/milkshake6.jpg" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">
+              Special Donut shake
+            </p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number18 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price18">6.95</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN18">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP18">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- coffee -->
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/coffee1.jpg" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">
+              Latte Salty Caramel
+            </p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae ducimus nemo
+              labore.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number19 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price19">4.95</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN19">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP19">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/coffee2.jpg" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">
+              Cappucino Checolate
+            </p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number20 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price20">4.45</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN20">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP20">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/coffee3.jpg" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Frappucino Ice</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number21 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price21">4.25</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN21">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP21">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/coffee4.jpg" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Coffee + donut</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet id iste molestiae magnam vitae.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number22 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price22">6.15</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN22">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP22">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/coffee5.jpg" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">
+              Coffee + cake of a day
+            </p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto
+              odio, quisquam amet.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number23 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price23">5.95</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN23">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP23">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup__add hidden">
+        <div class="add__container">
+          <ion-icon
+            class="icon__close add__icon"
+            name="close-outline"
+          ></ion-icon>
+          <img src="img/coffee6.jpg" alt="donut" class="add__img" />
+          <div class="add__description">
+            <p class="heading__2 add__description--title">Duo + donut</p>
+            <p class="text__small">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+              porro tempore laboriosam maiores obcaecati. Quasi officiis iusto.
+            </p>
+          </div>
+          <div class="add__number">
+            <ion-icon class="icon__add" name="remove-outline"></ion-icon>
+            <input
+              class="add__input input-number24 input-menu"
+              type="text"
+              min="1"
+              max="100"
+              placeholder="1"
+              value="1"
+            />
+            <ion-icon class="icon__add" name="add-outline"></ion-icon>
+            <p class="text__medium add__price">
+              $<span class="add__result--price input-price24">6.50</span>
+            </p>
+          </div>
+          <div class="add__result hidden">
+            <p class="add__result--number heading__4 textRN24">3</p>
+            <p class="heading__4">x</p>
+            <p class="heading__4">
+              $<span class="add__result--price textRP24">12.75</span>
+            </p>
+          </div>
+          <button class="btn btn__main btn-add-order">Add to order</button>
+          <div class="add__feedback hidden">
+            <button class="btn btn__main btn__main--medium menu-link">
+              View menu
+            </button>
+            <button class="btn btn__main btn__main--medium icon-basket">
+              pay now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section popup__nav hidden">
+      <div class="popup__nav--content">
+        <ion-icon
+          class="icon__close popup__close popup-nav-close"
+          name="close"
+        ></ion-icon>
+        <img src="img/logo2.png" alt="" class="popup__nav--logo logo-link" />
+        <div class="popup__nav--btns">
+          <button class="btn btn__main popup__nav--btn logo-link">
+            main page
+          </button>
+          <button class="btn btn__main popup__nav--btn menu-link">menu</button>
+          <!-- <button class="btn btn__main popup__nav--btn view-location">
+            delivery
+          </button> -->
+          <button class="btn btn__main popup__nav--btn view-location">
+            pick up
+          </button>
+          <button class="btn btn__main popup__nav--btn">about us</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/script.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>

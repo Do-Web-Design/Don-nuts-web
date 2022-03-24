@@ -1,0 +1,98 @@
+.menu {
+  &__container {
+    margin: 12rem 0 15rem 0;
+    display: grid;
+    grid-template-columns:
+      minmax(6rem, 1fr)
+      minmax(min-content, 100rem)
+      minmax(6rem, 1fr);
+  }
+
+  &__nav {
+    padding-top: 12rem;
+  }
+
+  &__links {
+    display: flex;
+    gap: 10rem;
+    cursor: pointer;
+
+    @media only screen and (max-width: $bp-1020) {
+      gap: 4rem;
+    }
+    @media only screen and (max-width: $bp-870) {
+      gap: 1rem;
+    }
+    @media only screen and (max-width: $bp-740) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+    &--1 {
+      @media only screen and (max-width: $bp-740) {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+      }
+    }
+    &--2 {
+      @media only screen and (max-width: $bp-740) {
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+    }
+    &--3 {
+      @media only screen and (max-width: $bp-740) {
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
+    }
+    &--4 {
+      @media only screen and (max-width: $bp-740) {
+        grid-column: 3/4;
+        grid-row: 2/3;
+      }
+    }
+  }
+
+  &__content {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    align-items: center;
+  }
+
+  &__offers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1rem;
+  }
+
+  &__offer {
+    display: flex;
+    box-shadow: 0 1rem 1rem rgba($color-text-dark, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  &__pic {
+    height: 16rem;
+    width: 16rem;
+    background-color: rgba($color-pure-white, 0.9);
+  }
+
+  &__description {
+    min-height: 16rem;
+    background-color: $color-pure-white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 2rem;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}

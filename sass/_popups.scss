@@ -1,0 +1,169 @@
+///////////////////////////////////////////////////////
+// popups Left Nav
+///////////////////////////////////////////////////////
+
+.popup {
+  &__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba($color-text-dark, 0.2);
+    z-index: 5000;
+
+    &--content {
+      background-color: $color-white;
+      box-shadow: 0 0 6rem rgba($color-text-dark, 0.4);
+      border-radius: 2px;
+
+      width: 50rem;
+      padding: 8rem;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+
+      @media only screen and (max-width: $bp-420) {
+        width: 100%;
+      }
+    }
+
+    &--logo {
+      height: 6.4rem;
+    }
+
+    &--btns {
+      padding-top: 9rem;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+
+    &--btn {
+      transition: all 0.4s 0.05s;
+      border: 1px solid $color-text-dark;
+      box-shadow: 0 1rem 3rem rgba($color-text-dark, 0.2);
+
+      &:hover {
+        background-color: $color-pure-white;
+        color: $color-text-dark;
+        border: 1px solid $color-text-dark;
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////////////////
+// popups Add to basket - in Menu Section
+///////////////////////////////////////////////////////
+
+.popup__add {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-color: rgba($color-text-dark, 0.2);
+  z-index: 5000;
+}
+
+.add {
+  position: relative;
+  &__container {
+    background-color: $color-white;
+    box-shadow: 0 0 6rem rgba($color-text-dark, 0.4);
+    border-radius: 2px;
+
+    width: 45rem;
+    padding: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s 0.2s;
+  }
+  &__icon {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+  }
+  &__img {
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &--title {
+      align-self: center;
+    }
+  }
+
+  &__number {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+  }
+
+  &__result {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__input {
+    width: 5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: $color-pure-white;
+    box-shadow: 0 5px 2rem rgba($color-shadow, 0.3);
+    text-align: center;
+    padding: 0.5rem;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 5px 2rem rgba($color-shadow, 0.4);
+    }
+
+    &--price {
+      width: 8rem;
+      font-size: 2.5rem;
+      border: none;
+      background-color: $color-white;
+      position: absolute;
+      padding: 0.5rem;
+      right: -10rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__price {
+    position: absolute;
+    top: 4px;
+    right: -7rem;
+
+    @media only screen and (max-width: $bp-1290) {
+      right: -6rem;
+    }
+  }
+
+  &__feedback {
+    display: flex;
+    gap: 2rem;
+  }
+}
