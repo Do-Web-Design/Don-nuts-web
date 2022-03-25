@@ -13,10 +13,19 @@ html {
       font-size: 50%; } }
   @media only screen and (max-width: 80.625em) {
     html {
-      font-size: 45%; } }
-  @media only screen and (max-width: 42.5em) {
+      font-size: 43%; } }
+  @media only screen and (max-width: 54.375em) {
     html {
       font-size: 40%; } }
+  @media only screen and (max-width: 42.5em) {
+    html {
+      font-size: 32%; } }
+  @media only screen and (max-width: 26.25em) {
+    html {
+      font-size: 25%; } }
+  @media only screen and (max-width: 18.75em) {
+    html {
+      font-size: 22%; } }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -52,7 +61,10 @@ body {
       grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 55rem) minmax(1rem, 1fr); } }
   @media only screen and (max-width: 26.25em) {
     body {
-      grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 34rem) minmax(1rem, 1fr); } }
+      grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 50rem) minmax(1rem, 1fr); } }
+  @media only screen and (max-width: 21.875em) {
+    body {
+      grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 40rem) minmax(1rem, 1fr); } }
 
 .container {
   grid-column: 2/3;
@@ -60,7 +72,6 @@ body {
   position: relative; }
 
 .header {
-  height: 100vh;
   overflow: hidden; }
 
 .nav {
@@ -100,9 +111,6 @@ body {
     height: 4rem;
     cursor: pointer; }
     @media only screen and (max-width: 35em) {
-      .nav__logo {
-        display: none; } }
-    @media only screen and (max-width: 26.25em) {
       .nav__logo {
         display: flex;
         height: 3rem;
@@ -187,7 +195,8 @@ body {
   @media only screen and (max-width: 26.25em) {
     .nav.sticky {
       padding: 3rem 16rem 3rem 0rem;
-      display: flex; } }
+      display: flex;
+      justify-content: space-evenly; } }
 
 .nav__icon--basket.sticky {
   top: 2rem; }
@@ -206,7 +215,7 @@ body {
       flex: 0 0 28rem; } }
   @media only screen and (max-width: 35em) {
     .search {
-      flex: 0 0 46%;
+      flex: 0 0 35%;
       padding-right: 6rem; } }
   @media only screen and (max-width: 26.25em) {
     .search {
@@ -262,28 +271,33 @@ body {
   width: 140rem;
   height: 55rem;
   display: flex;
-  padding: 15rem 0 5rem 4rem;
+  padding: 15rem 0 5rem 0rem;
   position: relative;
   margin: 0 3rem 0 1rem; }
   @media only screen and (max-width: 71.25em) {
     .cards {
-      width: 130rem; } }
+      width: 130rem;
+      padding: 15rem 0 5rem 3.5rem; } }
   @media only screen and (max-width: 63.75em) {
     .cards {
-      width: 110rem; } }
+      width: 100rem; } }
   @media only screen and (max-width: 54.375em) {
     .cards {
-      width: 90rem;
-      padding-right: 4rem; } }
+      width: 95rem; } }
+  @media only screen and (max-width: 46.25em) {
+    .cards {
+      width: 93rem;
+      padding: 15rem 1rem 5rem 3.5rem; } }
   @media only screen and (max-width: 42.5em) {
     .cards {
-      width: 70rem; } }
+      width: 95rem; } }
   @media only screen and (max-width: 35em) {
     .cards {
-      width: 59rem; } }
-  @media only screen and (max-width: 26.25em) {
+      width: 70rem; } }
+  @media only screen and (max-width: 21.875em) {
     .cards {
-      width: 38rem; } }
+      width: 45rem;
+      padding: 15rem 0 5rem 6rem; } }
   .cards__btn {
     align-self: center; }
   .cards__arrow {
@@ -292,11 +306,32 @@ body {
     background-color: transparent;
     color: #111111;
     position: absolute;
-    top: 46rem; }
+    top: 45rem; }
+    @media only screen and (max-width: 46.25em) {
+      .cards__arrow {
+        top: 46rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .cards__arrow {
+        top: 55rem; } }
+    @media only screen and (max-width: 21.875em) {
+      .cards__arrow {
+        top: 50rem; } }
     .cards__arrow--right {
       right: -2rem; }
+      @media only screen and (max-width: 26.25em) {
+        .cards__arrow--right {
+          right: -5rem; } }
+      @media only screen and (max-width: 18.75em) {
+        .cards__arrow--right {
+          right: -2rem; } }
     .cards__arrow--left {
       left: -2rem; }
+      @media only screen and (max-width: 26.25em) {
+        .cards__arrow--left {
+          left: -5rem; } }
+      @media only screen and (max-width: 18.75em) {
+        .cards__arrow--left {
+          left: -2rem; } }
 
 .card {
   height: 28rem;
@@ -312,19 +347,26 @@ body {
   text-align: center; }
   @media only screen and (max-width: 63.75em) {
     .card {
-      width: 30rem; } }
+      width: 28rem; } }
   @media only screen and (max-width: 54.375em) {
     .card {
-      width: 25rem; } }
+      width: 26rem;
+      border-radius: 28px; } }
+  @media only screen and (max-width: 46.25em) {
+    .card {
+      width: 24rem; } }
   @media only screen and (max-width: 42.5em) {
     .card {
-      width: 30rem; } }
+      width: 27rem; } }
   @media only screen and (max-width: 35em) {
     .card {
-      width: 25rem; } }
+      width: 30rem; } }
   @media only screen and (max-width: 26.25em) {
     .card {
       width: 30rem; } }
+  @media only screen and (max-width: 21.875em) {
+    .card {
+      width: 35rem; } }
   .card__content {
     position: relative; }
   .card__img {
@@ -373,19 +415,17 @@ body {
         padding: 1rem 2rem 4rem 2rem; } }
     @media only screen and (max-width: 63.75em) {
       .card__hovered {
-        width: 28rem; } }
+        width: 25rem; } }
     @media only screen and (max-width: 54.375em) {
       .card__hovered {
-        width: 23rem; } }
-    @media only screen and (max-width: 54.375em) {
-      .card__hovered {
-        width: 26rem; } }
+        width: 23rem;
+        border-radius: 35px; } }
     @media only screen and (max-width: 35em) {
       .card__hovered {
-        width: 22rem; } }
-    @media only screen and (max-width: 26.25em) {
+        width: 27rem; } }
+    @media only screen and (max-width: 21.875em) {
       .card__hovered {
-        width: 28rem; } }
+        width: 32rem; } }
     .card__hovered:hover {
       transform: translateY(-2px); }
     .card__hovered--pic {
@@ -395,7 +435,7 @@ body {
       font-size: 2rem;
       font-weight: 600; }
     .card__hovered--btn {
-      width: 15rem !important; }
+      width: 13rem !important; }
       @media only screen and (max-width: 35em) {
         .card__hovered--btn {
           width: 10rem !important; } }
@@ -422,8 +462,19 @@ body {
       font-size: 2rem;
       font-weight: 600; }
 
+.swiper-button-next,
+.swiper-button-prev {
+  border: none;
+  background-color: transparent;
+  color: rgba(17, 17, 17, 0.6); }
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 4rem;
+  position: absolute; }
+
 .location {
-  padding: 0 0 18rem 0;
+  padding: 18rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -431,22 +482,12 @@ body {
   position: relative; }
   .location__img {
     position: absolute;
-    top: -9rem;
+    top: 6rem;
     right: 0;
     width: 40rem; }
     @media only screen and (max-width: 63.75em) {
       .location__img {
         right: -8rem; } }
-    @media only screen and (max-width: 54.375em) {
-      .location__img {
-        top: -5rem;
-        right: -9rem;
-        width: 33rem; } }
-    @media only screen and (max-width: 46.25em) {
-      .location__img {
-        top: 0rem;
-        right: -6rem;
-        width: 26rem; } }
     @media only screen and (max-width: 42.5em) {
       .location__img {
         display: none; } }
@@ -1068,7 +1109,6 @@ body {
         outline: none; }
   .add__price {
     position: absolute;
-    top: 4px;
     right: -7rem; }
     @media only screen and (max-width: 80.625em) {
       .add__price {

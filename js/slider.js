@@ -8,65 +8,32 @@ const paymentSection = document.querySelector(".payment");
 ///////////////////////////////////////////////////////////////////
 
 function sliderCards(swiperContainer, next, prev) {
-  if (
-    window.matchMedia("(min-width : 42.5em)").matches &&
-    window.matchMedia("(max-width : 63.75em)").matches
-  ) {
-    let swiper = new Swiper(swiperContainer, {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      slidesPerGroup: 3,
-      loop: true,
-      loopFillGroupWithBlank: true,
+  let swiper = new Swiper(swiperContainer, {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    loopFillGroupWithBlank: true,
 
-      navigation: {
-        nextEl: next,
-        prevEl: prev,
-      },
-    });
-  } else if (
-    window.matchMedia("(min-width : 26.25em)").matches &&
-    window.matchMedia("(max-width : 42.5em)").matches
-  ) {
-    let swiper = new Swiper(swiperContainer, {
-      slidesPerView: 2,
-      spaceBetween: 30,
-      slidesPerGroup: 2,
-      // loop: true,
-      loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: next,
+      prevEl: prev,
+    },
 
-      navigation: {
-        nextEl: next,
-        prevEl: prev,
+    breakpoints: {
+      350: {
+        slidesPerView: 2,
+        spaceBetween: 15,
       },
-    });
-  } else if (window.matchMedia("(max-width : 26.25em)").matches) {
-    let swiper = new Swiper(swiperContainer, {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      slidesPerGroup: 1,
-      // loop: true,
-      loopFillGroupWithBlank: true,
-
-      navigation: {
-        nextEl: next,
-        prevEl: prev,
+      560: {
+        slidesPerView: 3,
+        // spaceBetween: 20,
       },
-    });
-  } else {
-    let swiper = new Swiper(swiperContainer, {
-      slidesPerView: 4,
-      spaceBetween: 30,
-      slidesPerGroup: 4,
-      // loop: true,
-      loopFillGroupWithBlank: true,
-
-      navigation: {
-        nextEl: next,
-        prevEl: prev,
+      1020: {
+        slidesPerView: 4,
+        spaceBetween: 30,
       },
-    });
-  }
+    },
+  });
 }
 
 sliderCards(

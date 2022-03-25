@@ -18,6 +18,8 @@ $bp-740: 46.25em;
 $bp-680: 42.5em;
 $bp-560: 35em;
 $bp-420: 26.25em;
+$bp-350: 21.875em;
+$bp-300: 18.75em;
 
 *,
 *::before,
@@ -35,10 +37,23 @@ html {
     font-size: 50%;
   }
   @media only screen and (max-width: $bp-1290) {
-    font-size: 45%;
+    font-size: 43%;
   }
-  @media only screen and (max-width: $bp-680) {
+
+  @media only screen and (max-width: $bp-870) {
     font-size: 40%;
+  }
+
+  @media only screen and (max-width: $bp-680) {
+    font-size: 32%;
+  }
+
+  @media only screen and (max-width: $bp-420) {
+    font-size: 25%;
+  }
+
+  @media only screen and (max-width: $bp-300) {
+    font-size: 22%;
   }
 }
 
@@ -105,7 +120,14 @@ body {
   @media only screen and (max-width: $bp-420) {
     grid-template-columns:
       minmax(1rem, 1fr)
-      minmax(min-content, 34rem)
+      minmax(min-content, 50rem)
+      minmax(1rem, 1fr);
+  }
+
+  @media only screen and (max-width: $bp-350) {
+    grid-template-columns:
+      minmax(1rem, 1fr)
+      minmax(min-content, 40rem)
       minmax(1rem, 1fr);
   }
 }
@@ -115,8 +137,3 @@ body {
   grid-row: 2/3;
   position: relative;
 }
-
-// .swiper {
-//   width: 600px;
-//   height: 300px;
-// }
