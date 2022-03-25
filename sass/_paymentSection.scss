@@ -2,6 +2,10 @@
   &__container {
     margin-top: 20rem;
     padding-bottom: 10rem;
+
+    @media only screen and (max-width: $bp-420) {
+      margin: 20rem 3rem 3rem 3rem;
+    }
   }
 
   &__nav {
@@ -133,6 +137,7 @@
       flex-direction: column;
       height: 15rem;
       justify-content: space-evenly;
+      width: 100%;
     }
 
     &--left {
@@ -340,7 +345,6 @@
 }
 
 .pickedUp {
-  // margin-top: 12.5rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;

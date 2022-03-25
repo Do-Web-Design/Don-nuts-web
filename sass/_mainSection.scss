@@ -25,7 +25,7 @@
   @media only screen and (max-width: $bp-560) {
     gap: 4rem;
   }
-  @media only screen and (max-width: $bp-420) {
+  @media only screen and (max-width: $bp-560) {
     justify-content: flex-end;
     padding-right: 15rem;
   }
@@ -46,14 +46,12 @@
     height: 4rem;
     cursor: pointer;
 
-    // @media only screen and (max-width: $bp-560) {
-    //   height: 3rem;
-    // }
-    @media only screen and (max-width: $bp-560) {
+    @media only screen and (max-width: $bp-420) {
       display: flex;
-      height: 3rem;
+      height: 2rem;
       align-self: center;
     }
+
     &:hover {
       transform: translateY(2px);
     }
@@ -94,11 +92,13 @@
         right: 6rem;
       }
       @media only screen and (max-width: $bp-560) {
-        top: 3rem;
-      }
-      @media only screen and (max-width: $bp-420) {
         top: 12rem;
       }
+
+      @media only screen and (max-width: $bp-350) {
+        height: 2rem;
+      }
+
       &:hover {
         transform: translateY(2px);
       }
@@ -129,11 +129,6 @@
     }
     @media only screen and (max-width: $bp-560) {
       top: -12rem;
-      left: -8.5rem;
-      height: 45rem;
-    }
-    @media only screen and (max-width: $bp-420) {
-      top: -12rem;
       left: -7rem;
       height: 40rem;
     }
@@ -151,7 +146,8 @@
   @media only screen and (max-width: $bp-1020) {
     padding-left: 2rem;
   }
-  @media only screen and (max-width: $bp-420) {
+
+  @media only screen and (max-width: $bp-560) {
     padding: 3rem 16rem 3rem 0rem;
     display: flex;
     justify-content: space-evenly;
@@ -175,10 +171,6 @@
     flex: 0 0 28rem;
   }
   @media only screen and (max-width: $bp-560) {
-    flex: 0 0 35%;
-    padding-right: 6rem;
-  }
-  @media only screen and (max-width: $bp-420) {
     flex: 0 0 22rem;
     display: none;
   }
@@ -241,7 +233,17 @@
     align-self: flex-end;
 
     @media only screen and (max-width: $bp-420) {
-      width: 100%;
+      width: 60%;
+    }
+
+    @media only screen and (max-width: $bp-420) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__second {
+    @media only screen and (max-width: $bp-420) {
+      margin-right: 3rem;
     }
   }
 }
@@ -273,16 +275,22 @@
   }
 
   @media only screen and (max-width: $bp-680) {
-    width: 95rem;
-  }
-
-  @media only screen and (max-width: $bp-560) {
     width: 70rem;
   }
 
-  @media only screen and (max-width: $bp-350) {
+  @media only screen and (max-width: $bp-560) {
+    width: 50rem;
+    padding-left: 10rem;
+  }
+
+  @media only screen and (max-width: $bp-420) {
     width: 45rem;
-    padding: 15rem 0 5rem 6rem;
+    padding-left: 11rem;
+  }
+
+  @media only screen and (max-width: $bp-350) {
+    padding-left: 10rem;
+    width: 40rem;
   }
 
   &__btn {
@@ -301,30 +309,16 @@
       top: 46rem;
     }
 
-    @media only screen and (max-width: $bp-420) {
-      top: 55rem;
-    }
-
-    @media only screen and (max-width: $bp-350) {
-      top: 50rem;
-    }
-
     &--right {
       right: -2rem;
       @media only screen and (max-width: $bp-420) {
-        right: -5rem;
-      }
-      @media only screen and (max-width: $bp-300) {
-        right: -2rem;
+        right: 3rem;
       }
     }
     &--left {
       left: -2rem;
       @media only screen and (max-width: $bp-420) {
-        left: -5rem;
-      }
-      @media only screen and (max-width: $bp-300) {
-        left: -2rem;
+        left: 3rem;
       }
     }
   }
@@ -359,11 +353,11 @@
   }
 
   @media only screen and (max-width: $bp-680) {
-    width: 27rem;
+    width: 30rem;
   }
 
   @media only screen and (max-width: $bp-560) {
-    width: 30rem;
+    width: 35rem;
   }
 
   @media only screen and (max-width: $bp-420) {
@@ -371,7 +365,7 @@
   }
 
   @media only screen and (max-width: $bp-350) {
-    width: 35rem;
+    width: 27rem;
   }
 
   &__content {
@@ -440,11 +434,21 @@
       width: 23rem;
       border-radius: 35px;
     }
-    @media only screen and (max-width: $bp-560) {
+
+    @media only screen and (max-width: $bp-680) {
       width: 27rem;
     }
-    @media only screen and (max-width: $bp-350) {
+
+    @media only screen and (max-width: $bp-560) {
       width: 32rem;
+    }
+
+    @media only screen and (max-width: $bp-420) {
+      width: 30rem;
+    }
+
+    @media only screen and (max-width: $bp-350) {
+      width: 25rem;
     }
 
     &:hover {
