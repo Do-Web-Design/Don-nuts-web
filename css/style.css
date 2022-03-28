@@ -17,6 +17,12 @@ html {
   @media only screen and (max-width: 54.375em) {
     html {
       font-size: 40%; } }
+  @media only screen and (max-width: 21.875em) {
+    html {
+      font-size: 35%; } }
+  @media only screen and (max-width: 15em) {
+    html {
+      font-size: 30%; } }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -43,13 +49,19 @@ body {
       grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 85rem) minmax(1rem, 1fr); } }
   @media only screen and (max-width: 46.25em) {
     body {
-      grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 80rem) minmax(1rem, 1fr); } }
+      grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 72rem) minmax(1rem, 1fr); } }
   @media only screen and (max-width: 42.5em) {
     body {
-      grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 75rem) minmax(1rem, 1fr); } }
+      grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 66rem) minmax(1rem, 1fr); } }
   @media only screen and (max-width: 35em) {
     body {
-      grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 55rem) minmax(1rem, 1fr); } }
+      grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 53rem) minmax(1rem, 1fr); } }
+  @media only screen and (max-width: 26.25em) {
+    body {
+      grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 40rem) minmax(1rem, 1fr); } }
+  @media only screen and (max-width: 21.875em) {
+    body {
+      grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 33rem) minmax(1rem, 1fr); } }
 
 .container {
   grid-column: 2/3;
@@ -78,11 +90,16 @@ body {
       gap: 5rem; } }
   @media only screen and (max-width: 35em) {
     .nav {
-      gap: 4rem; } }
-  @media only screen and (max-width: 35em) {
-    .nav {
+      gap: 4rem;
       justify-content: flex-end;
-      padding-right: 15rem; } }
+      padding-right: 15rem;
+      padding-top: 10rem; } }
+  @media only screen and (max-width: 15em) {
+    .nav {
+      gap: 4rem;
+      justify-content: flex-end;
+      padding-right: 15rem;
+      padding-top: 10rem; } }
   .nav__left {
     display: flex;
     gap: 11rem; }
@@ -129,10 +146,7 @@ body {
         right: 6rem; } }
     @media only screen and (max-width: 35em) {
       .nav__icon--basket {
-        top: 12rem; } }
-    @media only screen and (max-width: 21.875em) {
-      .nav__icon--basket {
-        height: 2rem; } }
+        top: 10rem; } }
     .nav__icon--basket:hover {
       transform: translateY(2px); }
   .nav__background {
@@ -160,7 +174,7 @@ body {
       .nav__background {
         top: -12rem;
         left: -7rem;
-        height: 40rem; } }
+        height: 36rem; } }
 
 .nav.sticky {
   position: fixed;
@@ -239,52 +253,66 @@ body {
   .headings__logo {
     width: 42rem;
     align-self: flex-end; }
+    @media only screen and (max-width: 35em) {
+      .headings__logo {
+        width: 90%; } }
     @media only screen and (max-width: 26.25em) {
       .headings__logo {
-        width: 60%; } }
-    @media only screen and (max-width: 26.25em) {
+        width: 70%; } }
+    @media only screen and (max-width: 21.875em) {
       .headings__logo {
-        margin-right: 3rem; } }
-  @media only screen and (max-width: 26.25em) {
+        margin-right: 2rem; } }
+  @media only screen and (max-width: 21.875em) {
     .headings__second {
-      margin-right: 3rem; } }
+      margin-right: 2rem; } }
 
 .cards {
   width: 140rem;
   height: 55rem;
   display: flex;
-  padding: 15rem 0 5rem 0rem;
+  justify-content: center;
+  padding: 15rem 0 5rem 6rem;
   position: relative;
   margin: 0 3rem 0 1rem; }
+  @media only screen and (max-width: 96.25em) {
+    .cards {
+      padding: 15rem 2rem 5rem 6rem; } }
+  @media only screen and (max-width: 80.625em) {
+    .cards {
+      padding: 15rem 2rem 5rem 4.5rem; } }
   @media only screen and (max-width: 71.25em) {
     .cards {
-      width: 130rem;
-      padding: 15rem 0 5rem 3.5rem; } }
+      width: 120rem;
+      padding: 15rem 2rem 5rem 3rem; } }
   @media only screen and (max-width: 63.75em) {
     .cards {
-      width: 100rem; } }
+      width: 100rem;
+      padding: 15rem 1rem 5rem 3.5rem; } }
   @media only screen and (max-width: 54.375em) {
     .cards {
-      width: 95rem; } }
+      width: 95rem;
+      padding: 15rem 1rem 5rem 3.5rem; } }
   @media only screen and (max-width: 46.25em) {
     .cards {
-      width: 93rem;
+      width: 72rem;
       padding: 15rem 1rem 5rem 3.5rem; } }
   @media only screen and (max-width: 42.5em) {
     .cards {
-      width: 70rem; } }
+      width: 66rem;
+      padding: 15rem 1rem 5rem 4rem; } }
   @media only screen and (max-width: 35em) {
     .cards {
-      width: 50rem;
-      padding-left: 10rem; } }
+      width: 54rem;
+      padding: 15rem 4rem 5rem 10rem; } }
   @media only screen and (max-width: 26.25em) {
     .cards {
-      width: 45rem;
-      padding-left: 11rem; } }
+      width: 40rem;
+      padding: 15rem 4rem 5rem 6.2rem; } }
   @media only screen and (max-width: 21.875em) {
     .cards {
-      padding-left: 10rem;
-      width: 40rem; } }
+      width: 34rem;
+      padding: 15rem 4rem 5rem 3.5rem;
+      margin: 0; } }
   .cards__btn {
     align-self: center; }
   .cards__arrow {
@@ -299,14 +327,26 @@ body {
         top: 46rem; } }
     .cards__arrow--right {
       right: -2rem; }
+      @media only screen and (max-width: 35em) {
+        .cards__arrow--right {
+          right: 4rem; } }
       @media only screen and (max-width: 26.25em) {
         .cards__arrow--right {
-          right: 3rem; } }
+          right: 0rem; } }
+      @media only screen and (max-width: 21.875em) {
+        .cards__arrow--right {
+          right: -3rem; } }
     .cards__arrow--left {
       left: -2rem; }
+      @media only screen and (max-width: 35em) {
+        .cards__arrow--left {
+          left: 4rem; } }
       @media only screen and (max-width: 26.25em) {
         .cards__arrow--left {
-          left: 3rem; } }
+          left: 0rem; } }
+      @media only screen and (max-width: 21.875em) {
+        .cards__arrow--left {
+          left: -3rem; } }
 
 .card {
   height: 28rem;
@@ -320,19 +360,25 @@ body {
   align-items: center;
   gap: 1.1rem;
   text-align: center; }
+  @media only screen and (max-width: 80.625em) {
+    .card {
+      width: 29rem; } }
+  @media only screen and (max-width: 71.25em) {
+    .card {
+      width: 26rem; } }
   @media only screen and (max-width: 63.75em) {
     .card {
       width: 28rem; } }
   @media only screen and (max-width: 54.375em) {
     .card {
-      width: 26rem;
+      width: 26.5rem;
       border-radius: 28px; } }
   @media only screen and (max-width: 46.25em) {
     .card {
-      width: 24rem; } }
+      width: 31.5rem; } }
   @media only screen and (max-width: 42.5em) {
     .card {
-      width: 30rem; } }
+      width: 27rem; } }
   @media only screen and (max-width: 35em) {
     .card {
       width: 35rem; } }
@@ -387,6 +433,7 @@ body {
     transition: transform 0.2s; }
     @media only screen and (max-width: 71.25em) {
       .card__hovered {
+        width: 23rem;
         padding: 1rem 2rem 4rem 2rem; } }
     @media only screen and (max-width: 63.75em) {
       .card__hovered {
@@ -395,18 +442,21 @@ body {
       .card__hovered {
         width: 23rem;
         border-radius: 35px; } }
+    @media only screen and (max-width: 46.25em) {
+      .card__hovered {
+        width: 28rem; } }
     @media only screen and (max-width: 42.5em) {
       .card__hovered {
-        width: 27rem; } }
+        width: 24rem; } }
     @media only screen and (max-width: 35em) {
       .card__hovered {
         width: 32rem; } }
     @media only screen and (max-width: 26.25em) {
       .card__hovered {
-        width: 30rem; } }
+        width: 26.5rem; } }
     @media only screen and (max-width: 21.875em) {
       .card__hovered {
-        width: 25rem; } }
+        width: 23rem; } }
     .card__hovered:hover {
       transform: translateY(-2px); }
     .card__hovered--pic {
@@ -461,6 +511,9 @@ body {
   align-items: center;
   gap: 5rem;
   position: relative; }
+  @media only screen and (max-width: 15em) {
+    .location {
+      padding: 18rem 0 25rem 0; } }
   .location__img {
     position: absolute;
     top: 6rem;
@@ -469,6 +522,11 @@ body {
     @media only screen and (max-width: 63.75em) {
       .location__img {
         right: -8rem; } }
+    @media only screen and (max-width: 46.25em) {
+      .location__img {
+        width: 32rem;
+        top: 12rem;
+        right: -13rem; } }
     @media only screen and (max-width: 42.5em) {
       .location__img {
         display: none; } }
@@ -948,10 +1006,17 @@ body {
       height: 6rem;
       margin-left: -1.2rem;
       margin-top: -1.8rem; }
+      @media only screen and (max-width: 21.875em) {
+        .footer__media--logo {
+          height: 4rem; } }
   .footer__icon {
     height: 3rem;
     width: 3rem;
     color: rgba(17, 17, 17, 0.7); }
+    @media only screen and (max-width: 21.875em) {
+      .footer__icon {
+        height: 2.5rem;
+        width: 2.5rem; } }
   .footer__description {
     font-size: 1.5rem;
     text-decoration: none;
@@ -1000,7 +1065,7 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: rgba(17, 17, 17, 0.2);
   z-index: 5000; }
   .popup__nav--content {
@@ -1013,16 +1078,34 @@ body {
     top: 0;
     left: 0;
     height: 100vh; }
-    @media only screen and (max-width: 26.25em) {
+    @media only screen and (max-width: 35em) {
       .popup__nav--content {
-        width: 100%; } }
+        width: 100%;
+        display: flex;
+        flex-direction: column; } }
   .popup__nav--logo {
     height: 6.4rem; }
+    @media only screen and (max-width: 35em) {
+      .popup__nav--logo {
+        width: 27rem;
+        align-self: center; } }
   .popup__nav--btns {
     padding-top: 9rem;
     display: flex;
     flex-direction: column;
     gap: 4rem; }
+    @media only screen and (max-width: 35em) {
+      .popup__nav--btns {
+        width: 60%;
+        align-self: center; } }
+    @media only screen and (max-width: 26.25em) {
+      .popup__nav--btns {
+        width: 80%;
+        align-self: center; } }
+    @media only screen and (max-width: 21.875em) {
+      .popup__nav--btns {
+        width: 90%;
+        align-self: center; } }
   .popup__nav--btn {
     transition: all 0.4s 0.05s;
     border: 1px solid #111111;
@@ -1031,6 +1114,10 @@ body {
       background-color: white;
       color: #111111;
       border: 1px solid #111111; }
+  @media only screen and (max-width: 35em) {
+    .popup__nav--close {
+      top: 5rem !important;
+      right: 5rem !important; } }
 
 .popup__add {
   height: 100vh;
@@ -1117,6 +1204,9 @@ body {
 .icon__basket {
   height: 7rem;
   z-index: 100; }
+  @media only screen and (max-width: 35em) {
+    .icon__basket {
+      height: 6rem; } }
 
 .icon__close {
   height: 3rem;
@@ -1170,6 +1260,9 @@ body {
   @media only screen and (max-width: 26.25em) {
     .heading__1 {
       font-size: 4rem; } }
+  @media only screen and (max-width: 21.875em) {
+    .heading__1 {
+      font-size: 3rem; } }
 
 .heading__2 {
   font-size: 1.81rem;
@@ -1180,6 +1273,9 @@ body {
   font-weight: 500;
   text-decoration: none;
   color: #111111; }
+  @media only screen and (max-width: 21.875em) {
+    .heading__4 {
+      font-size: 2rem; } }
 
 .text__title {
   font-size: 2.8rem;
@@ -1208,9 +1304,15 @@ body {
     padding: 2.3rem 5rem;
     border-radius: 25px 25px 0 25px;
     border: 1px solid #111111; }
+    @media only screen and (max-width: 21.875em) {
+      .btn__main {
+        padding: 1.3rem 2.3rem; } }
     .btn__main--arrow {
       padding-left: 3.5rem;
       font-size: 3rem; }
+      @media only screen and (max-width: 21.875em) {
+        .btn__main--arrow {
+          padding-left: 1.5rem; } }
     .btn__main--white {
       background-color: #fbfaf9;
       color: #111111;

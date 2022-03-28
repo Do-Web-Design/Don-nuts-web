@@ -2,6 +2,10 @@
   &__basket {
     height: 7rem;
     z-index: 100;
+
+    @media only screen and (max-width: $bp-560) {
+      height: 6rem;
+    }
   }
 
   &__close {
@@ -74,6 +78,10 @@
     @media only screen and (max-width: $bp-420) {
       font-size: 4rem;
     }
+
+    @media only screen and (max-width: $bp-350) {
+      font-size: 3rem;
+    }
   }
   &__2 {
     font-size: 1.81rem;
@@ -92,6 +100,10 @@
     font-weight: 500;
     text-decoration: none;
     color: $color-text-dark;
+
+    @media only screen and (max-width: $bp-350) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -131,9 +143,17 @@
     border-radius: 25px 25px 0 25px;
     border: 1px solid $color-text-dark;
 
+    @media only screen and (max-width: $bp-350) {
+      padding: 1.3rem 2.3rem;
+    }
+
     &--arrow {
       padding-left: 3.5rem;
       font-size: 3rem;
+
+      @media only screen and (max-width: $bp-350) {
+        padding-left: 1.5rem;
+      }
     }
 
     &--white {

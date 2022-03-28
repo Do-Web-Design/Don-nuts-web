@@ -53,6 +53,10 @@
       height: 6rem;
       margin-left: -1.2rem;
       margin-top: -1.8rem;
+
+      @media only screen and (max-width: $bp-350) {
+        height: 4rem;
+      }
     }
   }
 
@@ -60,6 +64,11 @@
     height: 3rem;
     width: 3rem;
     color: rgba($color-text-dark, 0.7);
+
+    @media only screen and (max-width: $bp-350) {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
   }
 
   &__description {

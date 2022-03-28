@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-color: rgba($color-text-dark, 0.2);
     z-index: 5000;
 
@@ -25,13 +25,19 @@
       left: 0;
       height: 100vh;
 
-      @media only screen and (max-width: $bp-420) {
+      @media only screen and (max-width: $bp-560) {
         width: 100%;
+        display: flex;
+        flex-direction: column;
       }
     }
 
     &--logo {
       height: 6.4rem;
+      @media only screen and (max-width: $bp-560) {
+        width: 27rem;
+        align-self: center;
+      }
     }
 
     &--btns {
@@ -39,6 +45,19 @@
       display: flex;
       flex-direction: column;
       gap: 4rem;
+
+      @media only screen and (max-width: $bp-560) {
+        width: 60%;
+        align-self: center;
+      }
+      @media only screen and (max-width: $bp-420) {
+        width: 80%;
+        align-self: center;
+      }
+      @media only screen and (max-width: $bp-350) {
+        width: 90%;
+        align-self: center;
+      }
     }
 
     &--btn {
@@ -50,6 +69,13 @@
         background-color: $color-pure-white;
         color: $color-text-dark;
         border: 1px solid $color-text-dark;
+      }
+    }
+
+    &--close {
+      @media only screen and (max-width: $bp-560) {
+        top: 5rem !important;
+        right: 5rem !important;
       }
     }
   }

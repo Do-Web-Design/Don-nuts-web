@@ -22,11 +22,11 @@ function sliderCards(swiperContainer, next, prev) {
     breakpoints: {
       560: {
         slidesPerView: 2,
-        spaceBetween: 15,
+        spaceBetween: 25,
       },
-      680: {
+      740: {
         slidesPerView: 3,
-        // spaceBetween: 20,
+        spaceBetween: 30,
       },
       1020: {
         slidesPerView: 4,

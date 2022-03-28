@@ -20,6 +20,7 @@ $bp-560: 35em;
 $bp-420: 26.25em;
 $bp-350: 21.875em;
 $bp-300: 18.75em;
+$bp-240: 15em;
 
 *,
 *::before,
@@ -42,6 +43,14 @@ html {
 
   @media only screen and (max-width: $bp-870) {
     font-size: 40%;
+  }
+
+  @media only screen and (max-width: $bp-350) {
+    font-size: 35%;
+  }
+
+  @media only screen and (max-width: $bp-240) {
+    font-size: 30%;
   }
 }
 
@@ -87,21 +96,35 @@ body {
   @media only screen and (max-width: $bp-740) {
     grid-template-columns:
       minmax(1rem, 1fr)
-      minmax(min-content, 80rem)
+      minmax(min-content, 72rem)
       minmax(1rem, 1fr);
   }
 
   @media only screen and (max-width: $bp-680) {
     grid-template-columns:
       minmax(1rem, 1fr)
-      minmax(min-content, 75rem)
+      minmax(min-content, 66rem)
       minmax(1rem, 1fr);
   }
 
   @media only screen and (max-width: $bp-560) {
     grid-template-columns:
       minmax(1rem, 1fr)
-      minmax(min-content, 55rem)
+      minmax(min-content, 53rem)
+      minmax(1rem, 1fr);
+  }
+
+  @media only screen and (max-width: $bp-420) {
+    grid-template-columns:
+      minmax(1rem, 1fr)
+      minmax(min-content, 40rem)
+      minmax(1rem, 1fr);
+  }
+
+  @media only screen and (max-width: $bp-350) {
+    grid-template-columns:
+      minmax(1rem, 1fr)
+      minmax(min-content, 33rem)
       minmax(1rem, 1fr);
   }
 }
