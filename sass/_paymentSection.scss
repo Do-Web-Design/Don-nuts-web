@@ -1,5 +1,4 @@
 .payment {
-  
   &__container {
     margin-top: 20rem;
     padding-bottom: 10rem;
@@ -371,6 +370,41 @@
   }
 }
 
+////////////////////////////////////////////////////////////////
+
+.map {
+  grid-column: 1/-1;
+  height: 87vh;
+
+  @media only screen and (max-width: $bp-560) {
+    height: max-content;
+  }
+
+  &__container {
+    margin-top: 11rem;
+
+    display: grid;
+    grid-template-columns: minmax(35rem, 1fr) 3fr;
+
+    @media only screen and (max-width: $bp-560) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__box {
+    grid-column: 2/3;
+    background-color: rgba($color-shadow, 0.2);
+
+    @media only screen and (max-width: $bp-560) {
+      width: 100%;
+      height: 50rem;
+    }
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////
+
 .locations {
   &__list {
     border-top: 1px solid rgba($color-shadow, 0.3);
@@ -378,7 +412,7 @@
     max-height: 87vh;
 
     @media only screen and (max-width: $bp-560) {
-      max-height: 37rem;
+      max-height: 45vh;
     }
 
     &::-webkit-scrollbar {
@@ -441,39 +475,6 @@
         color: $color-white;
         background-color: $color-text-dark;
       }
-    }
-  }
-}
-
-////////////////////////////////////////////////////////////////
-
-.map {
-  grid-column: 1/-1;
-  height: 87vh;
-
-  @media only screen and (max-width: $bp-560) {
-    height: max-content;
-  }
-
-  &__container {
-    margin-top: 11rem;
-
-    display: grid;
-    grid-template-columns: minmax(35rem, 1fr) 3fr;
-
-    @media only screen and (max-width: $bp-560) {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  &__box {
-    grid-column: 2/3;
-    background-color: rgba($color-shadow, 0.2);
-
-    @media only screen and (max-width: $bp-560) {
-      width: 100%;
-      height: 50rem;
     }
   }
 }

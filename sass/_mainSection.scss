@@ -32,7 +32,6 @@
     gap: 4rem;
     justify-content: flex-end;
     padding-right: 15rem;
-    padding-top: 10rem;
   }
 
   &__left {
@@ -242,6 +241,7 @@
 
     @media only screen and (max-width: $bp-560) {
       width: 90%;
+      margin-right: 3rem;
     }
 
     @media only screen and (max-width: $bp-420) {
@@ -254,8 +254,8 @@
   }
 
   &__second {
-    @media only screen and (max-width: $bp-350) {
-      margin-right: 2rem;
+    @media only screen and (max-width: $bp-560) {
+      margin-right: 3rem;
     }
   }
 }
@@ -497,6 +497,7 @@
 
     @media only screen and (max-width: $bp-560) {
       width: 32rem;
+      height: 37.5rem;
     }
 
     @media only screen and (max-width: $bp-420) {

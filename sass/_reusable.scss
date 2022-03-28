@@ -6,6 +6,10 @@
     @media only screen and (max-width: $bp-560) {
       height: 6rem;
     }
+
+    @media only screen and (max-width: $bp-420) {
+      height: 5rem;
+    }
   }
 
   &__close {
@@ -218,12 +222,11 @@
     padding: 1rem 3rem;
     border-radius: 25px;
     border: 1px solid $color-text-dark;
+    text-align: center;
 
-    //in payment section
-    @media only screen and (max-width: $bp-420) {
+    @media only screen and (max-width: $bp-560) {
       font-size: 1.5rem;
       padding: 1rem 2rem;
-      text-align: center;
     }
 
     &--white {

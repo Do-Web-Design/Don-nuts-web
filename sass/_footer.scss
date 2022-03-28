@@ -19,6 +19,13 @@
       minmax(1rem, 1fr);
   }
 
+  @media only screen and (max-width: $bp-560) {
+    grid-template-columns:
+      minmax(0.1rem, 1fr)
+      1fr
+      minmax(0.1rem, 1fr);
+  }
+
   &__content {
     grid-column: 2/-2;
     display: grid;
@@ -54,7 +61,11 @@
       margin-left: -1.2rem;
       margin-top: -1.8rem;
 
-      @media only screen and (max-width: $bp-350) {
+      @media only screen and (max-width: $bp-560) {
+        height: 5rem;
+      }
+
+      @media only screen and (max-width: $bp-420) {
         height: 4rem;
       }
     }

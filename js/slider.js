@@ -10,7 +10,7 @@ const paymentSection = document.querySelector(".payment");
 function sliderCards(swiperContainer, next, prev) {
   let swiper = new Swiper(swiperContainer, {
     slidesPerView: 1,
-    spaceBetween: 55,
+    spaceBetween: 100,
     loop: true,
     loopFillGroupWithBlank: true,
 

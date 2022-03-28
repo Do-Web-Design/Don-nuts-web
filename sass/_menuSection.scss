@@ -16,14 +16,15 @@
 
     @media only screen and (max-width: $bp-560) {
       grid-template-columns:
-        0.2rem
-        100vw
-        0.2rem;
+        0rem
+        90vw
+        0rem;
     }
   }
 
   &__nav {
     padding-top: 12rem;
+    display: none;
   }
 
   &__links {
@@ -77,6 +78,7 @@
 
     @media only screen and (max-width: $bp-420) {
       width: 100%;
+      gap: 6rem;
     }
   }
 
@@ -84,11 +86,16 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     gap: 1rem;
+
+    @media only screen and (max-width: $bp-560) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__offer {
     display: flex;
     box-shadow: 0 1rem 1rem rgba($color-text-dark, 0.1);
+    background-color: rgba($color-pure-white, 0.9);
     border-radius: 2px;
     overflow: hidden;
   }
@@ -96,7 +103,6 @@
   &__pic {
     height: 16rem;
     width: 16rem;
-    background-color: rgba($color-pure-white, 0.9);
 
     @media only screen and (max-width: $bp-420) {
       height: 12rem;
@@ -108,7 +114,6 @@
 
   &__description {
     min-height: 16rem;
-    background-color: $color-pure-white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
