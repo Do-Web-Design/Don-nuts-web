@@ -96,6 +96,10 @@
       @media only screen and (max-width: $bp-1290) {
         right: 6rem;
       }
+      @media only screen and (max-width: $bp-680) {
+        right: 4rem;
+      }
+
       @media only screen and (max-width: $bp-560) {
         top: 10rem;
       }
@@ -143,19 +147,21 @@
   padding-top: 3rem;
   width: 100%;
   padding: 3rem 9rem;
-
-  @media only screen and (max-width: $bp-1020) {
-    padding-left: 2rem;
-  }
+  display: flex;
+  justify-content: space-between;
 
   @media only screen and (max-width: $bp-560) {
-    padding: 3rem 16rem 3rem 0rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    padding: 3rem;
   }
 }
 .nav__icon--basket.sticky {
   top: 2rem;
+  @media only screen and (max-width: $bp-560) {
+    right: 3rem;
+    top: 3rem;
+  }
 }
 
 .search {
@@ -170,6 +176,7 @@
   }
   @media only screen and (max-width: $bp-740) {
     flex: 0 0 28rem;
+    padding-right: 10rem;
   }
   @media only screen and (max-width: $bp-560) {
     flex: 0 0 22rem;
@@ -297,7 +304,7 @@
 
   @media only screen and (max-width: $bp-560) {
     width: 54rem;
-    padding: 15rem 4rem 5rem 10rem;
+    padding: 15rem 4rem 5rem 10.2rem;
   }
 
   @media only screen and (max-width: $bp-420) {

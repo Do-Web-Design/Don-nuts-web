@@ -144,6 +144,9 @@ body {
     @media only screen and (max-width: 80.625em) {
       .nav__icon--basket {
         right: 6rem; } }
+    @media only screen and (max-width: 42.5em) {
+      .nav__icon--basket {
+        right: 4rem; } }
     @media only screen and (max-width: 35em) {
       .nav__icon--basket {
         top: 10rem; } }
@@ -182,18 +185,21 @@ body {
   z-index: 100;
   padding-top: 3rem;
   width: 100%;
-  padding: 3rem 9rem; }
-  @media only screen and (max-width: 63.75em) {
-    .nav.sticky {
-      padding-left: 2rem; } }
+  padding: 3rem 9rem;
+  display: flex;
+  justify-content: space-between; }
   @media only screen and (max-width: 35em) {
     .nav.sticky {
-      padding: 3rem 16rem 3rem 0rem;
       display: flex;
-      justify-content: space-evenly; } }
+      justify-content: flex-start;
+      padding: 3rem; } }
 
 .nav__icon--basket.sticky {
   top: 2rem; }
+  @media only screen and (max-width: 35em) {
+    .nav__icon--basket.sticky {
+      right: 3rem;
+      top: 3rem; } }
 
 .search {
   flex: 0 0 43%;
@@ -206,7 +212,8 @@ body {
       padding-right: 7rem; } }
   @media only screen and (max-width: 46.25em) {
     .search {
-      flex: 0 0 28rem; } }
+      flex: 0 0 28rem;
+      padding-right: 10rem; } }
   @media only screen and (max-width: 35em) {
     .search {
       flex: 0 0 22rem;
@@ -303,7 +310,7 @@ body {
   @media only screen and (max-width: 35em) {
     .cards {
       width: 54rem;
-      padding: 15rem 4rem 5rem 10rem; } }
+      padding: 15rem 4rem 5rem 10.2rem; } }
   @media only screen and (max-width: 26.25em) {
     .cards {
       width: 40rem;
@@ -537,6 +544,12 @@ body {
   margin: 12rem 0 15rem 0;
   display: grid;
   grid-template-columns: minmax(6rem, 1fr) minmax(min-content, 100rem) minmax(6rem, 1fr); }
+  @media only screen and (max-width: 46.25em) {
+    .menu__container {
+      grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 70rem) minmax(1rem, 1fr); } }
+  @media only screen and (max-width: 35em) {
+    .menu__container {
+      grid-template-columns: 0.2rem 100vw 0.2rem; } }
 
 .menu__nav {
   padding-top: 12rem; }
@@ -610,6 +623,7 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 0.6rem;
   padding: 2rem; }
 
@@ -617,6 +631,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-end; }
+  @media only screen and (max-width: 35em) {
+    .menu__price {
+      align-items: center;
+      padding-right: 2rem; } }
 
 .payment__container {
   margin-top: 20rem;
@@ -647,13 +665,16 @@ body {
         width: 18rem; } }
     @media only screen and (max-width: 63.75em) {
       .payment__nav:not(:last-child):after {
-        width: 12rem; } }
+        width: 13rem; } }
     @media only screen and (max-width: 54.375em) {
       .payment__nav:not(:last-child):after {
-        width: 7rem; } }
-    @media only screen and (max-width: 35em) {
+        width: 9rem; } }
+    @media only screen and (max-width: 46.25em) {
       .payment__nav:not(:last-child):after {
-        width: 2rem; } }
+        width: 6rem; } }
+    @media only screen and (max-width: 42.5em) {
+      .payment__nav:not(:last-child):after {
+        display: none; } }
   .payment__nav--icon {
     position: absolute;
     top: 50%;
@@ -732,11 +753,12 @@ body {
   .payment__card--left {
     display: flex;
     align-items: center;
-    gap: 3rem; }
+    gap: 3rem;
+    position: relative; }
     @media only screen and (max-width: 26.25em) {
       .payment__card--left {
         padding-top: 2rem;
-        margin-left: -4rem;
+        margin-left: 7rem;
         width: 40rem; } }
   .payment__card--right {
     display: flex;
@@ -790,6 +812,9 @@ body {
   top: -1.5rem;
   left: 50%;
   transform: translateX(-50%); }
+  @media only screen and (max-width: 26.25em) {
+    .payment__btns {
+      gap: 2rem; } }
 
 .payment__btn {
   padding: 1.2rem 0;
@@ -1145,7 +1170,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.4s 0.2s; }
-    @media only screen and (max-width: 26.25em) {
+    @media only screen and (max-width: 35em) {
       .add__container {
         width: 100%; } }
   .add__icon {
@@ -1156,6 +1181,10 @@ body {
     height: 80%;
     width: 80%;
     border-radius: 50%; }
+    @media only screen and (max-width: 35em) {
+      .add__img {
+        width: 60%;
+        height: 60%; } }
   .add__description {
     display: flex;
     flex-direction: column;
@@ -1237,6 +1266,11 @@ body {
   height: 2.3rem;
   width: 2.3rem;
   color: rgba(17, 17, 17, 0.4); }
+  @media only screen and (max-width: 26.25em) {
+    .icon__bin {
+      position: absolute;
+      top: 5rem;
+      right: 9rem; } }
   .icon__bin:hover {
     color: rgba(17, 17, 17, 0.8); }
 
@@ -1341,7 +1375,6 @@ body {
     .btn__order--basket {
       height: 1.7rem;
       position: absolute;
-      bottom: 3px;
       right: 0rem; }
       .btn__order--basket:hover {
         transform: translateX(2px); }

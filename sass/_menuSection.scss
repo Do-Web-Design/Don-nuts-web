@@ -6,6 +6,20 @@
       minmax(6rem, 1fr)
       minmax(min-content, 100rem)
       minmax(6rem, 1fr);
+
+    @media only screen and (max-width: $bp-740) {
+      grid-template-columns:
+        minmax(1rem, 1fr)
+        minmax(min-content, 70rem)
+        minmax(1rem, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-560) {
+      grid-template-columns:
+        0.2rem
+        100vw
+        0.2rem;
+    }
   }
 
   &__nav {
@@ -97,6 +111,7 @@
     background-color: $color-pure-white;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 0.6rem;
     padding: 2rem;
   }
@@ -105,5 +120,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @media only screen and (max-width: $bp-560) {
+      align-items: center;
+      padding-right: 2rem;
+    }
   }
 }

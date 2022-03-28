@@ -45,6 +45,12 @@
     width: 2.3rem;
     color: rgba($color-text-dark, 0.4);
 
+    @media only screen and (max-width: $bp-420) {
+      position: absolute;
+      top: 5rem;
+      right: 9rem;
+    }
+
     &:hover {
       color: rgba($color-text-dark, 0.8);
     }
@@ -194,7 +200,6 @@
     &--basket {
       height: 1.7rem;
       position: absolute;
-      bottom: 3px;
       right: 0rem;
 
       &:hover {
@@ -214,6 +219,7 @@
     border-radius: 25px;
     border: 1px solid $color-text-dark;
 
+    //in payment section
     @media only screen and (max-width: $bp-420) {
       font-size: 1.5rem;
       padding: 1rem 2rem;

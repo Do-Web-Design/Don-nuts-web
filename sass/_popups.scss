@@ -98,6 +98,7 @@
 
 .add {
   position: relative;
+
   &__container {
     background-color: $color-white;
     box-shadow: 0 0 6rem rgba($color-text-dark, 0.4);
@@ -117,7 +118,7 @@
     transform: translate(-50%, -50%);
     transition: all 0.4s 0.2s;
 
-    @media only screen and (max-width: $bp-420) {
+    @media only screen and (max-width: $bp-560) {
       width: 100%;
     }
   }
@@ -130,6 +131,11 @@
     height: 80%;
     width: 80%;
     border-radius: 50%;
+
+    @media only screen and (max-width: $bp-560) {
+      width: 60%;
+      height: 60%;
+    }
   }
   &__description {
     display: flex;

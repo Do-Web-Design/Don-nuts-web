@@ -1,4 +1,5 @@
 .payment {
+  
   &__container {
     margin-top: 20rem;
     padding-bottom: 10rem;
@@ -33,13 +34,16 @@
         width: 18rem;
       }
       @media only screen and (max-width: $bp-1020) {
-        width: 12rem;
+        width: 13rem;
       }
       @media only screen and (max-width: $bp-870) {
-        width: 7rem;
+        width: 9rem;
       }
-      @media only screen and (max-width: $bp-560) {
-        width: 2rem;
+      @media only screen and (max-width: $bp-740) {
+        width: 6rem;
+      }
+      @media only screen and (max-width: $bp-680) {
+        display: none;
       }
     }
 
@@ -144,10 +148,11 @@
       display: flex;
       align-items: center;
       gap: 3rem;
+      position: relative;
 
       @media only screen and (max-width: $bp-420) {
         padding-top: 2rem;
-        margin-left: -4rem;
+        margin-left: 7rem;
         width: 40rem;
       }
     }
@@ -221,6 +226,10 @@
     top: -1.5rem;
     left: 50%;
     transform: translateX(-50%);
+
+    @media only screen and (max-width: $bp-420) {
+      gap: 2rem;
+    }
   }
 
   &__btn {
