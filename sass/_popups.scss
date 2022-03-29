@@ -195,10 +195,27 @@
     @media only screen and (max-width: $bp-1290) {
       right: -6rem;
     }
+
+    @media only screen and (max-width: $bp-560) {
+      right: -8rem;
+    }
+
+    @media only screen and (max-width: $bp-420) {
+      right: -7rem;
+    }
+
+    @media only screen and (max-width: $bp-350) {
+      right: -6rem;
+    }
+ 
   }
 
   &__feedback {
     display: flex;
     gap: 2rem;
   }
+}
+
+.popup__add .add__price {
+  right: -8rem;
 }

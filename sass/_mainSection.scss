@@ -28,11 +28,7 @@
     padding-right: 15rem;
     padding-top: 10rem;
   }
-  @media only screen and (max-width: $bp-240) {
-    gap: 4rem;
-    justify-content: flex-end;
-    padding-right: 15rem;
-  }
+
 
   &__left {
     display: flex;
@@ -348,6 +344,7 @@
       @media only screen and (max-width: $bp-350) {
         right: -3rem;
       }
+   
     }
     &--left {
       left: -2rem;
@@ -363,6 +360,8 @@
       @media only screen and (max-width: $bp-350) {
         left: -3rem;
       }
+
+   
     }
   }
 }
@@ -497,7 +496,7 @@
 
     @media only screen and (max-width: $bp-560) {
       width: 32rem;
-      height: 37.5rem;
+      height: 38rem;
     }
 
     @media only screen and (max-width: $bp-420) {
@@ -507,14 +506,16 @@
     @media only screen and (max-width: $bp-350) {
       width: 23rem;
     }
+ 
 
     &:hover {
       transform: translateY(-2px);
     }
 
     &--pic {
-      height: 52%;
+      height: 52%;  
     }
+
     &--price {
       text-align: center;
       font-size: 2rem;
@@ -582,10 +583,6 @@
   align-items: center;
   gap: 5rem;
   position: relative;
-
-  @media only screen and (max-width: $bp-240) {
-    padding: 18rem 0 25rem 0;
-  }
 
   &__img {
     position: absolute;

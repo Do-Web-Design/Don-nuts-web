@@ -20,9 +20,6 @@ html {
   @media only screen and (max-width: 21.875em) {
     html {
       font-size: 35%; } }
-  @media only screen and (max-width: 15em) {
-    html {
-      font-size: 30%; } }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -94,11 +91,6 @@ body {
       justify-content: flex-end;
       padding-right: 15rem;
       padding-top: 10rem; } }
-  @media only screen and (max-width: 15em) {
-    .nav {
-      gap: 4rem;
-      justify-content: flex-end;
-      padding-right: 15rem; } }
   .nav__left {
     display: flex;
     gap: 11rem; }
@@ -458,7 +450,7 @@ body {
     @media only screen and (max-width: 35em) {
       .card__hovered {
         width: 32rem;
-        height: 37.5rem; } }
+        height: 38rem; } }
     @media only screen and (max-width: 26.25em) {
       .card__hovered {
         width: 26.5rem; } }
@@ -519,9 +511,6 @@ body {
   align-items: center;
   gap: 5rem;
   position: relative; }
-  @media only screen and (max-width: 15em) {
-    .location {
-      padding: 18rem 0 25rem 0; } }
   .location__img {
     position: absolute;
     top: 6rem;
@@ -550,7 +539,7 @@ body {
       grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 70rem) minmax(1rem, 1fr); } }
   @media only screen and (max-width: 35em) {
     .menu__container {
-      grid-template-columns: 0rem 90vw 0rem; } }
+      grid-template-columns: 1fr 90vw 1fr; } }
 
 .menu__nav {
   padding-top: 12rem;
@@ -568,24 +557,28 @@ body {
       gap: 1rem; } }
   @media only screen and (max-width: 46.25em) {
     .menu__links {
+      width: 80vw;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr; } }
+  @media only screen and (max-width: 26.25em) {
+    .menu__links {
+      width: 90vw; } }
   @media only screen and (max-width: 46.25em) {
     .menu__links--1 {
-      grid-column: 1/-1;
+      grid-column: 1/2;
       grid-row: 1/2; } }
   @media only screen and (max-width: 46.25em) {
     .menu__links--2 {
+      grid-column: 2/3;
+      grid-row: 1/2; } }
+  @media only screen and (max-width: 46.25em) {
+    .menu__links--3 {
       grid-column: 1/2;
       grid-row: 2/3; } }
   @media only screen and (max-width: 46.25em) {
-    .menu__links--3 {
-      grid-column: 2/3;
-      grid-row: 2/3; } }
-  @media only screen and (max-width: 46.25em) {
     .menu__links--4 {
-      grid-column: 3/4;
+      grid-column: 2/3;
       grid-row: 2/3; } }
 
 .menu__content {
@@ -760,6 +753,9 @@ body {
     align-items: center;
     gap: 3rem;
     position: relative; }
+    @media only screen and (max-width: 35em) {
+      .payment__card--left {
+        margin-left: -4rem; } }
     @media only screen and (max-width: 26.25em) {
       .payment__card--left {
         padding-top: 2rem;
@@ -770,10 +766,12 @@ body {
     align-items: center;
     gap: 3rem;
     padding-right: 5rem;
-    position: relative; }
+    position: relative;
+    padding-left: 2rem; }
     @media only screen and (max-width: 26.25em) {
       .payment__card--right {
-        padding-bottom: 2rem; } }
+        padding-bottom: 2rem;
+        padding-top: 1rem; } }
   .payment__card--img {
     height: 9rem;
     width: 9rem; }
@@ -826,6 +824,9 @@ body {
   border-radius: 25px;
   border: 1px solid #111111;
   width: 20rem; }
+  @media only screen and (max-width: 26.25em) {
+    .payment__btn {
+      width: 15rem; } }
   .payment__btn--active {
     background-color: #111111;
     color: white; }
@@ -895,7 +896,7 @@ body {
         .delivery__form input, .delivery__contact input {
           max-width: 100%; } }
       .delivery__form input:focus, .delivery__contact input:focus {
-        outline: 1px solid #111111; }
+        outline: 0.5px solid #111111; }
     .delivery__form--inLine, .delivery__contact--inLine {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -1237,9 +1238,21 @@ body {
     @media only screen and (max-width: 80.625em) {
       .add__price {
         right: -6rem; } }
+    @media only screen and (max-width: 35em) {
+      .add__price {
+        right: -8rem; } }
+    @media only screen and (max-width: 26.25em) {
+      .add__price {
+        right: -7rem; } }
+    @media only screen and (max-width: 21.875em) {
+      .add__price {
+        right: -6rem; } }
   .add__feedback {
     display: flex;
     gap: 2rem; }
+
+.popup__add .add__price {
+  right: -8rem; }
 
 .icon__basket {
   height: 7rem;
@@ -1284,7 +1297,7 @@ body {
     .icon__bin {
       position: absolute;
       top: 5rem;
-      right: 9rem; } }
+      right: 7rem; } }
   .icon__bin:hover {
     color: rgba(17, 17, 17, 0.8); }
 

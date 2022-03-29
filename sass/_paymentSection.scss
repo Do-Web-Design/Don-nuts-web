@@ -149,6 +149,10 @@
       gap: 3rem;
       position: relative;
 
+      @media only screen and (max-width: $bp-560) {
+        margin-left: -4rem;
+      }
+
       @media only screen and (max-width: $bp-420) {
         padding-top: 2rem;
         margin-left: 7rem;
@@ -162,9 +166,11 @@
       gap: 3rem;
       padding-right: 5rem;
       position: relative;
+      padding-left: 2rem;
 
       @media only screen and (max-width: $bp-420) {
         padding-bottom: 2rem;
+        padding-top: 1rem;
       }
     }
 
@@ -236,6 +242,10 @@
     border-radius: 25px;
     border: 1px solid $color-text-dark;
     width: 20rem;
+
+    @media only screen and (max-width: $bp-420) {
+      width: 15rem;
+    }
 
     &--active {
       background-color: $color-text-dark;
@@ -330,7 +340,7 @@
       }
 
       &:focus {
-        outline: 1px solid $color-text-dark;
+        outline: 0.5px solid $color-text-dark;
       }
     }
 

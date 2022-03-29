@@ -20,7 +20,7 @@ $bp-560: 35em;
 $bp-420: 26.25em;
 $bp-350: 21.875em;
 $bp-300: 18.75em;
-$bp-240: 15em;
+$bp-260: 16.25em;
 
 *,
 *::before,
@@ -49,9 +49,6 @@ html {
     font-size: 35%;
   }
 
-  @media only screen and (max-width: $bp-240) {
-    font-size: 30%;
-  }
 }
 
 body {

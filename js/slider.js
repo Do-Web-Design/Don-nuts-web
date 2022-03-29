@@ -11,8 +11,10 @@ function sliderCards(swiperContainer, next, prev) {
   let swiper = new Swiper(swiperContainer, {
     slidesPerView: 1,
     spaceBetween: 100,
-    loop: true,
-    loopFillGroupWithBlank: true,
+    // loop: true,
+    // loopFillGroupWithBlank: true,
+
+    parallax: true,
 
     navigation: {
       nextEl: next,
