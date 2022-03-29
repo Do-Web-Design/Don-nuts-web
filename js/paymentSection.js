@@ -18,6 +18,8 @@ const paymentSummaryDelivery = document.querySelector(
 );
 const paymentSummaryPick = document.querySelector(".payment__summary--pickup");
 
+const form = document.querySelector(".delivery__form");
+
 //totals
 const subtotal = document.querySelector(".list-subtotal");
 const tip = document.querySelector(".list-tip");
@@ -138,6 +140,8 @@ btnContinueStepShoppingCard.addEventListener("click", function () {
   activeBtnPaymentNavSteps(btnPaymentNavForm);
   inactiveBtnPayNowTotals();
 
+  addRequiredToDeliveryForm();
+
   activePaymentNav(btnPaymentNavShoppingCard, stepPaymentShoppingCard);
   activePaymentNav(btnPaymentNavForm, stepPaymentForm);
 
@@ -193,6 +197,8 @@ btnPaymentFormDelivery.addEventListener("click", function () {
   paymentSummaryDelivery.classList.remove("hidden");
   paymentSummaryPick.classList.add("hidden");
 
+  addRequiredToDeliveryForm();
+
   btnPaymentFormNavActive(btnPaymentFormDelivery, btnPaymentFormPickUp);
   window.scrollTo(0, 0);
 });
@@ -204,6 +210,8 @@ btnPaymentFormPickUp.addEventListener("click", function () {
   paymentSummaryDelivery.classList.add("hidden");
   paymentSummaryPick.classList.remove("hidden");
 
+  removeRequiredToDeliveryForm();
+
   window.scrollTo(0, 0);
 });
 
@@ -214,6 +222,8 @@ for (let i = 0; i < btnSelectMap.length; i++) {
     footerSection.classList.remove("hidden");
     sectionPick.classList.remove("hidden");
     sectionDelivery.classList.add("hidden");
+
+    removeRequiredToDeliveryForm();
 
     const location = textSelect[i].innerText;
     for (const el of selectedLocation) el.innerText = location;
@@ -230,6 +240,8 @@ btnMapDelivery.addEventListener("click", function () {
   sectionDelivery.classList.remove("hidden");
   paymentSummaryDelivery.classList.remove("hidden");
   paymentSummaryPick.classList.add("hidden");
+
+  addRequiredToDeliveryForm();
 
   btnPaymentFormNavActive(btnPaymentFormDelivery, btnPaymentFormPickUp);
   window.scrollTo(0, 0);
@@ -262,6 +274,10 @@ function submitForm() {
   }
 }
 
+form.onsubmit = function () {
+  submitForm();
+};
+
 function inputValue() {
   const phone = document.getElementById("phone").value;
   const email = document.getElementById("email").value;
@@ -289,6 +305,35 @@ function inputValue() {
   citySelected.innerHTML = city + "," + " " + state + " " + zip;
 }
 
+function addRequiredToDeliveryForm() {
+  if (!sectionDelivery.classList.contains("hidden")) {
+    const street = document.getElementById("delivery-street");
+    const num = document.getElementById("delivery-street-num");
+    const city = document.getElementById("delivery-city");
+    const state = document.getElementById("delivery-state");
+    const zip = document.getElementById("delivery-zip");
+    street.setAttribute("required", "");
+    num.setAttribute("required", "");
+    city.setAttribute("required", "");
+    state.setAttribute("required", "");
+    zip.setAttribute("required", "");
+  }
+}
+
+function removeRequiredToDeliveryForm() {
+  if (sectionDelivery.classList.contains("hidden")) {
+    const street = document.getElementById("delivery-street");
+    const num = document.getElementById("delivery-street-num");
+    const city = document.getElementById("delivery-city");
+    const state = document.getElementById("delivery-state");
+    const zip = document.getElementById("delivery-zip");
+    street.required = false;
+    num.required = false;
+    city.required = false;
+    state.required = false;
+    zip.required = false;
+  }
+}
 //////////////////////////////////////////////////////////////////////
 //totals
 //////////////////////////////////////////////////////////////////////
