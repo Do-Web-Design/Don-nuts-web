@@ -380,8 +380,14 @@ function cleanInputs() {
 const totalShopingCard = document.querySelectorAll(".totals-shop-card");
 const totalList = document.querySelectorAll(".list-card");
 
+const iconBasketNav = document.querySelector(".icon-basket");
+const iconsBasketCards = document.querySelectorAll(".card__basket");
+
 for (let i = 0; i < btnCardAdd.length; i++) {
   btnCardAdd[i].addEventListener("click", function () {
+    iconBasketNav.style.backgroundColor = "#9e6d3f";
+    iconsBasketCards[i].style.backgroundColor = "#9e6d3f";
+
     btnCardAdd[i].classList.add("hidden");
     btnCardPay[i].classList.remove("hidden");
     btnMenuAdd[i].classList.add("hidden");
@@ -401,6 +407,9 @@ for (let i = 0; i < 12; i++) {
     btnCardPay[i].classList.remove("hidden");
     btnMenuAdd[i].classList.add("hidden");
     btnMenuFeedback[i].classList.remove("hidden");
+
+    iconBasketNav.style.backgroundColor = "#9e6d3f";
+    iconsBasketCards[i].style.backgroundColor = "#9e6d3f";
 
     emptyCard.classList.add("hidden");
     shoppingCard.classList.remove("hidden");
@@ -422,6 +431,8 @@ for (let i = 0; i < 12; i++) {
     btnMenuAdd[i].classList.remove("hidden");
     btnMenuFeedback[i].classList.add("hidden");
 
+    iconsBasketCards[i].style.backgroundColor = "#111111";
+
     const newArr = [];
     for (const el of paymentCards) {
       if (el.classList.contains("hidden")) newArr.push(el);
@@ -429,6 +440,7 @@ for (let i = 0; i < 12; i++) {
     if (newArr.length === paymentCards.length) {
       shoppingCard.classList.add("hidden");
       emptyCard.classList.remove("hidden");
+      iconBasketNav.style.backgroundColor = "#111111";
     }
     totalList[i].classList.add("hidden");
     totalShopingCard[i].classList.remove("price");
@@ -441,6 +453,8 @@ for (let i = 11; i < 24; i++) {
   btnMenuAdd[i].addEventListener("click", function () {
     btnMenuAdd[i].classList.add("hidden");
     btnMenuFeedback[i].classList.remove("hidden");
+
+    iconBasketNav.style.backgroundColor = "#9e6d3f";
 
     emptyCard.classList.add("hidden");
     shoppingCard.classList.remove("hidden");
@@ -464,6 +478,7 @@ for (let i = 11; i < 24; i++) {
     if (newArr.length === paymentCards.length) {
       shoppingCard.classList.add("hidden");
       emptyCard.classList.remove("hidden");
+      iconBasketNav[i].style.backgroundColor = "#111111";
     }
     totalList[i].classList.add("hidden");
     totalShopingCard[i].classList.remove("price");
